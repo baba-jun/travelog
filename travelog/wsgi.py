@@ -1,5 +1,5 @@
 """
-WSGI config for hello_world project.
+WSGI config for travelog project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
