@@ -60,7 +60,7 @@ MIDDLEWARE = [
 
 X_FRAME_OPTIONS = "ALLOW-FROM preview.app.github.dev"
 
-ROOT_URLCONF = "hello_world.urls"
+ROOT_URLCONF = "travelog.urls"
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "hello_world.wsgi.application"
+WSGI_APPLICATION = "travelog.wsgi.application"
 
 
 # Database
