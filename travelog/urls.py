@@ -18,11 +18,12 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from travelog.core import views as core_views
+from . import views
 
 urlpatterns = [
-    path("", core_views.index),
+    path('', views.IndexView.as_view(), name="index"),
     path("admin/", admin.site.urls),
+    path('accounts/', include('allauth.urls')),
     path("__reload__/", include("django_browser_reload.urls")),
 ]
 if settings.DEBUG:
