@@ -3,4 +3,4 @@ __pycache__/
 staticfiles/
 .env
 venv/
-settings_secret.py
+workspaces/travelog/travelog/settings_secret.py
