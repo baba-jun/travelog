@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_browser_reload",
     "accounts.apps.AccountsConfig",
+    "django_bootstrap5",
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -135,6 +136,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+
+
 STATICFILES_DIRS = [
     BASE_DIR / "travelog" / "static",
 ]
@@ -142,8 +145,6 @@ STATICFILES_DIRS = [
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "travelog" / "staticfiles"
 
-MEDIA_URL = "media/"
-MEDIA_ROOT = BASE_DIR / "travelog" / "media"
 
 
 # Default primary key field type
