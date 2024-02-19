@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from .settings_secret import *
 
 load_dotenv()
 
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_browser_reload",
     "accounts.apps.AccountsConfig",
+    "django_bootstrap5",
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -134,6 +136,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+
+
 STATICFILES_DIRS = [
     BASE_DIR / "travelog" / "static",
 ]
@@ -141,8 +145,6 @@ STATICFILES_DIRS = [
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "travelog" / "staticfiles"
 
-MEDIA_URL = "media/"
-MEDIA_ROOT = BASE_DIR / "travelog" / "media"
 
 
 # Default primary key field type
@@ -189,3 +191,10 @@ DEFAULT_FROM_EMAIL = 'travelogapp.official@gmail.com'
 
 # ローカルでの開発のためメールをコンソールで表示する
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'travelogapp.official@gmail.com'
+EMAIL_HOST_PASSWORD = google_mailer
+EMAIL_USE_TLS = True

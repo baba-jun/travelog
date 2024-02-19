@@ -1,26 +1,26 @@
-{% load django_browser_reload %}
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
 {% load static %}
 
-<!doctype html>
-<html lang="en">
+{% block title %}Travelog{% endblock %}
 
-<head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static 'main.css' %}">
-</head>
+{% block active_signup %}active{% endblock %}
 
-<body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>travelog/templates/index.html</code> and see changes live!
-            </p>
-        </header>
+{% block contents %}
+
+<div class="container-fluid py-5 w-75">
+    <div class="row">
+        <div class="col-12 p-3">
+            <img class="img-fluid" src={% static 'assets/img/top.png' %} alt="...">
+        </div>
     </div>
-</body>
+    <div class="container-fluid py-5 w-75">
+        <div class="row">
+            <button type="button" class="btn btn-block btn-primary btn-lg my-4" onclick="location.href='accounts/signup/'">サインアップ</button>
+            <button type="button" class="btn btn-block btn-primary btn-lg my-4" onclick="location.href='accounts/login/'">ログイン</button>
+        </div>
+    </div>
+</div>
 
-</html>
+
+{% endblock %}
