@@ -23,6 +23,11 @@
     <!-- My style -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
     {% block head %}{% endblock %}
+
+    <!-- Web Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -70,11 +75,6 @@
 
     {% block contents%}{% endblock %}
 
-    <!-- Footer -->
-    <footer class="py-5 bg-black">
-        <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Travelog 2024</p>
-        </div>
-    </footer>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
