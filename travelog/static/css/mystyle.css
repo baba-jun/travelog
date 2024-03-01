@@ -2,6 +2,7 @@ body, #wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-bottom: 50px;
 }
 
 footer {
@@ -10,4 +11,20 @@ footer {
 
 .my-div-style {
     margin-top: 6rem;
+}
+
+.user-name{
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.user-img{
+    max-width: 15%;
+}
+
+.user-info{
+    align-items: center;
 }

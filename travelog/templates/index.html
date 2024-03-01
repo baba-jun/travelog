@@ -8,6 +8,101 @@
 
 {% block contents %}
 
+{% if user.is_authenticated %}
+
+<div class="card w-100 text-body">
+  <div class="user-info d-flex flex-row">
+    <img src="travelog/static/assets/img/55.jpg" class="user-img p-2 rounded-circle" alt="...">
+    <h2 class="user-name text-body p-2">@{{ user.username }}</h2>
+  </div>
+
+
+    <div id="carouselExample" class="carousel slide carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="travelog/static/assets/img/53.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="travelog/static/assets/img/54.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    <div class="card-body">
+      <h2 class="card-title">江戸川河川敷で夕焼け</h2>
+      <p class="card-text">江戸川河川敷の夕焼けめっちゃきれい！</p>
+    </div>
+</div>
+
+<div class="card w-100 text-body">
+  <div class="user-info d-flex flex-row">
+    <img src="travelog/static/assets/img/55.jpg" class="user-img p-2 rounded-circle" alt="...">
+    <h2 class="user-name text-body p-2">@{{ user.username }}</h2>
+  </div>
+
+
+    <div id="carouselExample" class="carousel slide carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="travelog/static/assets/img/53.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="travelog/static/assets/img/54.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    <div class="card-body">
+      <h2 class="card-title">江戸川河川敷で夕焼け</h2>
+      <p class="card-text">江戸川河川敷の夕焼けめっちゃきれい！</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand navbar-light bg-light flex-row fixed-bottom">
+    <div class="container-fluid">
+        <ul class="navbar-nav w-100 nav-justified">
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#">Search</a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#">Post</a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#">notice</a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+
+{% else %}
+
 <div class="container-fluid py-5 w-75">
     <div class="row">
         <div class="col-12 p-3">
@@ -22,5 +117,11 @@
     </div>
 </div>
 
+<!-- Footer -->
+<footer class="py-5 bg-black">
+    <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Travelog 2024</p>
+    </div>
+</footer>
+{% endif %}
 
 {% endblock %}
