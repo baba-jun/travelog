@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_browser_reload",
     "accounts.apps.AccountsConfig",
+    "travelog_app.apps.TravelogAppConfig",
     "django_bootstrap5",
     'django.contrib.sites',
     'allauth',
@@ -72,6 +73,10 @@ X_FRAME_OPTIONS = "ALLOW-FROM preview.app.github.dev"
 
 ROOT_URLCONF = "travelog.urls"
 
+ACCOUNT_FORMS = {
+'signup': 'accounts.forms.CustomSignupForm',
+}
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -96,8 +101,12 @@ WSGI_APPLICATION = "travelog.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "travelog",
+        "USER": "juice",
+        "PASSWORD": "pos3321",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
@@ -177,7 +186,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_EMAIL_REQUIRED = True
 
 # ログイン/ログアウト後の遷移先を設定
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = 'travelog_app:index'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
 
 # ログアウトリンクのクリック一発でログアウトする設定
