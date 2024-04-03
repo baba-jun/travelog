@@ -35,7 +35,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid px-md-5 px-4">
-            <a class="navbar-brand" href="{% url 'index' %}">Travelog</a>
+            <a class="navbar-brand" href="{% url 'travelog_app:index' %}">Travelog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span></button>
@@ -59,19 +59,6 @@
 
     {% block header%}{% endblock %}
 
-    {% if messages %}
-    <div class="container my-div-style">
-        <div class="row">
-            <ul class="messages" style="list-style: none;">
-                {% for message in messages %}
-                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
-                    {{ message }}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    {% endif %}
 
     {% block contents%}{% endblock %}
 
