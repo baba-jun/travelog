@@ -99,8 +99,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'travelog',
-        'USER': 'juice',
-        'PASSWORD': 'juicedb',
+        'USER': db_user,
+        'PASSWORD': db_passpord,
         'HOST': 'db',
         'PORT': 5432,
     }
