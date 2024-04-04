@@ -4,13 +4,62 @@
 {% block title %}投稿画面{% endblock %}
 
 {% block contents %}
-<div class="container my-div-style">
-    <div class="row">
-        <form method="POST" enctype='multipart/form-data'>
-            {% csrf_token %}
-            <table class="table">
-                {{form.as_table}}
-            </table>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
+<script src="{% static 'script/post-form.js' %}"></script>
+</head>
+
+<div class="container my-div-style mt-3">
+    <div class="row postform">
+        <form method="POST" enctype='multipart/form-data'>{% csrf_token %}
+            <div class="form-img-wrapper">
+                <label id="img_post1">
+                    {{form.post_image1}}
+                </label>
+                <img id="preview">
+                <label id="img_post2">
+                    {{form.post_image2}}
+                </label>
+            </div>
+            <div class="form-img-wrapper">
+                <label id="img_post3">
+                    {{form.post_image3}}
+                </label>
+                <label id="img_post4">
+                    {{form.post_image4}}
+                </label>
+            </div>
+
+            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
+                <strong>{{form.title.label_tag}}</strong>
+            </label>
+            <div class="col-8">
+                {{form.title}}
+            </div>
+            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
+                <strong>{{form.comment.label_tag}}</strong>
+            </label>
+            <div class="col-8">
+                {{form.comment}}
+            </div>
+            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
+                <strong>{{form.country.label_tag}}</strong>
+            </label>
+            <div class="col-8">
+                {{form.country}}
+            </div>
+            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
+                <strong>{{form.prefectures.label_tag}}</strong>
+            </label>
+            <div class="col-8">
+                {{form.prefectures}}
+            </div>
+            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
+                <strong>{{form.city.label_tag}}</strong>
+            </label>
+            <div class="col-8">
+                {{form.city}}
+            </div>
             <button class="btn btn-primary" type="submit">投稿</button>
         </form>
     </div>

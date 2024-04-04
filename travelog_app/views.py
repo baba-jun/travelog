@@ -20,7 +20,7 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
 
     def form_valid(self, form: BaseModelForm) -> HttpResponse:
         post = form.save(commit=False)
-        post.user = self.request.user
+        post.user_id = self.request.user
         post.save()
         messages.success(self.request, '投稿完了')
         return super().form_valid(form)
