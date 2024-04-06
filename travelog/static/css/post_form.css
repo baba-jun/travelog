@@ -6,7 +6,7 @@
 
 #img_post1, #img_post2, #img_post3, #img_post4{
     width: 40%;
-    margin: 2% 5%;
+    margin: 5%;
     aspect-ratio: 1/1;
     background-size: contain;
     background-position: center;
@@ -33,4 +33,8 @@
 
 #img_post1 input, #img_post2 input, #img_post3 input, #img_post4 input{
     display: none;
+}
+
+.posttextform{
+    padding: 0 5%;
 }

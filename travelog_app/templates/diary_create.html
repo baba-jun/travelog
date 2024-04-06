@@ -10,7 +10,7 @@
 </head>
 
 <div class="container my-div-style mt-3">
-    <div class="row postform">
+    <div class="row postimgform">
         <form method="POST" enctype='multipart/form-data'>{% csrf_token %}
             <div class="form-img-wrapper">
                 <label id="img_post1">
@@ -29,38 +29,32 @@
                     {{form.post_image4}}
                 </label>
             </div>
-
-            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
-                <strong>{{form.title.label_tag}}</strong>
-            </label>
-            <div class="col-8">
+    </div>
+    <div class="row posttextform">
+            <div class="col-8 my-3">
                 {{form.title}}
             </div>
-            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
-                <strong>{{form.comment.label_tag}}</strong>
-            </label>
-            <div class="col-8">
+
+            <div class="col-10 my-3">
                 {{form.comment}}
             </div>
-            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
-                <strong>{{form.country.label_tag}}</strong>
-            </label>
-            <div class="col-8">
+
+            <div class="col-8 my-3">
                 {{form.country}}
             </div>
-            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
-                <strong>{{form.prefectures.label_tag}}</strong>
-            </label>
-            <div class="col-8">
+
+            <div class="col-8 my-3">
                 {{form.prefectures}}
             </div>
-            <label for="{{field.title_for_label}}" class="col-4 col-form-label">
-                <strong>{{form.city.label_tag}}</strong>
-            </label>
-            <div class="col-8">
+
+            <div class="col-8 my-3">
                 {{form.city}}
             </div>
-            <button class="btn btn-primary" type="submit">投稿</button>
+
+            <div class="col-8 my-3">
+            <button class="btn btn-primary w-50" type="submit">投稿</button>
+            </div>
+
         </form>
     </div>
 <div>
