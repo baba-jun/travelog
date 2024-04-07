@@ -69,6 +69,8 @@ MIDDLEWARE = [
     "allauth.account.middleware.AccountMiddleware",
 ]
 
+
+
 X_FRAME_OPTIONS = "ALLOW-FROM preview.app.github.dev"
 
 ROOT_URLCONF = "travelog.urls"

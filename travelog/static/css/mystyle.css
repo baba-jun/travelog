@@ -5,8 +5,19 @@ body, #wrapper {
     padding-bottom: 50px;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: "Noto Sans JP", sans-serif;
+}
+
 footer {
     margin-top: auto;
+}
+
+.alert{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 22px;
 }
 
 .my-div-style {
@@ -19,7 +30,7 @@ footer {
 .user-name{
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     font-size: 20px;
 }

@@ -93,7 +93,7 @@ $(function() {
           
           CityDropdown.empty();
           $.each(CityDropdownChoices, function(index, value) {
-            CityDropdown.append($('<option>').text(value.city_name));
+            CityDropdown.append($('<option>').text(value.city_name).val(value.city_id));
           });
         }
       });

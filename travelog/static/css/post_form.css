@@ -1,3 +1,9 @@
+h1, h2, h3, h4, h5, h6{
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(65 64 64);
+}
+
 .form-img-wrapper{
     display: flex;
     max-width: 100%;
@@ -5,8 +11,8 @@
 }
 
 #img_post1, #img_post2, #img_post3, #img_post4{
-    width: 40%;
-    margin: 5%;
+    width: 45%;
+    margin: 2.5%;
     aspect-ratio: 1/1;
     background-size: contain;
     background-position: center;
@@ -36,5 +42,50 @@
 }
 
 .posttextform{
-    padding: 0 5%;
+    padding: 5%;
+}
+
+.postimgform{
+    padding: 5%;
+}
+
+.form-control, .form-select{
+    background-color: rgb(233, 231, 231);
+    border: none;
+}
+
+.form-select{
+    color: rgb(70, 69, 69);
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.form-control::placeholder{
+    color: rgb(95, 95, 95);
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.form-label{
+    color: rgb(77, 77, 77);
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.badge-required{
+    background-color: rgb(238, 39, 39);
+    font-family: "Noto Sans JP", sans-serif;
+    font-style:normal;
+    margin-right: 0.3rem;
+}
+
+.submit-btn{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
 }

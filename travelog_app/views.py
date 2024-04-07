@@ -51,6 +51,7 @@ def upload_csv_data(request):
             city.city_id = line[0]
             city.city_name = line[1]
             city.prefecture_id = prefectures.objects.get(prefecture_id = line[2])
+            print(line[2])
             city.save()
 
 
@@ -59,9 +60,9 @@ def upload_csv_data(request):
 def get_city_dropdown(request):
     prefectures_dropdown_value = request.GET.get('id_prefectures_value')
 
-    city_dropdown_choices = cities.objects.filter(prefecture_id = prefectures_dropdown_value).values("city_name")
-    
-    city_dropdown_choices_list = list(city_dropdown_choices)
-    print(city_dropdown_choices_list)
-    
+    city_dropdown_choices = cities.objects.filter(prefecture_id = prefectures_dropdown_value).values("city_name","city_id")
+
+    city_dropdown_choices_list = [{'city_name': '選択してください', 'city_id': ''}]
+    city_dropdown_choices_list.extend(list(city_dropdown_choices))
+
     return JsonResponse({'city_dropdown_choices': city_dropdown_choices_list})
