@@ -4,14 +4,69 @@
 {% block title %}投稿画面{% endblock %}
 
 {% block contents %}
-<div class="container my-div-style">
-    <div class="row">
-        <form method="POST" enctype='multipart/form-data'>
-            {% csrf_token %}
-            <table class="table">
-                {{form.as_table}}
-            </table>
-            <button class="btn btn-primary" type="submit">投稿</button>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
+<script src="{% static 'script/post-form.js' %}"></script>
+</head>
+
+<div class="container my-div-style mt-3">
+    <div class="row postimgform">
+        <h2>投稿画像</h2>
+        <form method="POST" enctype='multipart/form-data'>{% csrf_token %}
+            <div class="form-img-wrapper">
+                <label id="img_post1">
+                    {{form.post_image1}}
+                </label>
+                <img id="preview">
+                <label id="img_post2">
+                    {{form.post_image2}}
+                </label>
+            </div>
+            <div class="form-img-wrapper">
+                <label id="img_post3">
+                    {{form.post_image3}}
+                </label>
+                <label id="img_post4">
+                    {{form.post_image4}}
+                </label>
+            </div>
+    </div>
+    <div class="row posttextform">
+
+            <h2>投稿内容</h2>
+            <div class="col-8 my-3">
+                <label for="id_title" class="form-label"><span class="badge badge-required">必須</span>タイトル</label>
+                {{form.title}}
+            </div>
+
+            <div class="col-11 my-3">
+                <label for="id_comment" class="form-label"><span class="badge badge-required">必須</span>投稿本文</label>
+                {{form.comment}}
+            </div>
+    </div>
+    <div class="row posttextform">
+
+            <h2>観光地情報</h2>
+
+            <div class="col-8 my-3">
+                <label for="id_country" class="form-label">国</label>
+                {{form.country}}
+            </div>
+
+            <div class="col-8 my-3">
+                <label for="id_prefectures" class="form-label">都道府県</label>
+                {{form.prefectures}}
+            </div>
+
+            <div class="col-8 my-3">
+                <label for="id_cities" class="form-label">市区町村</label>
+                {{form.city}}
+            </div>
+
+            <div class="col-12 my-3">
+            <button class="btn btn-primary w-100 submit-btn py-2 my-5" type="submit">投稿する</button>
+            </div>
+
         </form>
     </div>
 <div>
