@@ -9,20 +9,22 @@
 {% block contents %}
 
 {% if user.is_authenticated %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
 <script src="{% static 'script/post-form.js' %}"></script>
 
+
 {% for message in messages %}
-<div {% if message.tags %}class="alert alert-{{ message.tags }}"{% endif %}>
-    {{ message }}
+{% if message.message == '投稿完了' %}
+<div class="alert alert-{{ message.tags }}">
+  {{ message.message }}
 </div>
+{% endif %}
 {% endfor %}
 <div class="card w-100 text-body">
 
-
+{% for diary in diary_list %}
   <div class="user-info d-flex flex-row">
     <img src="static/assets/img/55.jpg" class="user-img p-2 rounded-circle" alt="...">
-    <h2 class="user-name text-body py-2">@{{ user.username }}</h2>
+    <h2 class="user-name text-body py-2">@{{ diary.user_id.username}}</h2>
   </div>
 
 
@@ -70,10 +72,9 @@
       </div>
 
     <div class="card-body">
-      <h2 class="card-title pt-1 pb-4">伊勢神宮内宮</h2>
+      <h2 class="card-title pt-1 pb-4">{{ diary.title}}</h2>
       <p class="card-text rounded p-3 mb-4">
-        伊勢神宮内宮なう<br>
-        平日なのに人多いな
+        {{ diary.comment}}
       </p>
 
 
@@ -91,28 +92,28 @@
                 <li class="list-group-item"><span class="fw-bold">都道府県</span>：<a class="link-opacity-100" href="#">三重県</a></li>
                 <li class="list-group-item"><span class="fw-bold">市町村区</span>：<a class="link-opacity-100" href="#">伊勢市</a></li>
               </ul>
-          
+
               <a class="link-opacity-100" href="#">この観光地の位置</a>
-              
+
             </div>
           </div>
         </div>
 
 
-      <div class="d-flex tag_area pt-4">
+      <!--<div class="d-flex tag_area pt-4">
         <button type="button" class="btn tag btn-dark me-2">伊勢神宮</button>
         <button type="button" class="btn tag btn-dark me-2">神秘的</button>
       </div>
 
-    </div>
+    </div>-->
 
     <div class="container button_area py-3">
       <div class="row">
         <div class="col-2 button-item">
-          <img src="{% static 'assets/img/heart_after.png' %}" alt="">
+          <img src="{% static 'assets/img/heart_before.png' %}" alt="">
         </div>
         <div class="col-2 button-item">
-          <img src="{% static 'assets/img/bookmark_after.png' %}" alt="">
+          <img src="{% static 'assets/img/bookmark_before.png' %}" alt="">
         </div>
         <div class="col-2 button-item">
           <img src="{% static 'assets/img/share.png' %}" alt="">
@@ -121,7 +122,7 @@
     </div>
 
 </div>
-
+{% endfor %}
 
 <nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
     <div class="container-fluid">

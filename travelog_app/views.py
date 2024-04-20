@@ -12,8 +12,10 @@ from io import TextIOWrapper, StringIO
 from django.http import JsonResponse
 
 
-class IndexView(generic.TemplateView):
+class IndexView(generic.ListView):
     template_name = "index.html"
+    model = diary
+
 
 class CreatePostView(LoginRequiredMixin, generic.CreateView):
     model = diary
