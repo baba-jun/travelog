@@ -14,7 +14,7 @@ class DiaryCreateForm(forms.ModelForm):
     city = CustomCitiesModelChoiceField(queryset=cities.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)
     country = forms.ChoiceField(
         choices=(
-            ('ja', '日本'),
+            ('日本', '日本'),
             ),
         widget=forms.Select(attrs={'class': 'form-select'}),
         required = False,

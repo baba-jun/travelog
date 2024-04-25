@@ -4,11 +4,11 @@ from django.shortcuts import render
 from django.views import generic
 from .forms import DiaryCreateForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import diary, prefectures, cities
+from .models import diary, prefectures, cities, likes
 from django.urls import reverse_lazy
 from django.contrib import messages
 import csv
-from io import TextIOWrapper, StringIO
+from io import TextIOWrapper
 from django.http import JsonResponse
 
 
@@ -16,6 +16,9 @@ class IndexView(generic.ListView):
     template_name = "index.html"
     model = diary
 
+class HomeView(generic.ListView):
+    template_name = "home.html"
+    model = diary
 
 class CreatePostView(LoginRequiredMixin, generic.CreateView):
     model = diary
@@ -33,6 +36,7 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
     def form_invalid(self, form: BaseModelForm) -> HttpResponse:
         messages.success(self.request, '投稿失敗')
         return super().form_invalid(form)
+
 
 def upload_csv_data(request):
     if 'csv_prefecture' in request.FILES:

@@ -92,6 +92,17 @@ footer {
     color: white;
 }
 
+.post_value{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.button-item a{
+    text-align: center;
+}
+
 .thumbnail_postimgs{
     position: static;
     display: block;
