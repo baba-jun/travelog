@@ -6,7 +6,9 @@
 
 {% block active_signup %}active{% endblock %}
 
+
 {% block contents %}
+
 
 {% if user.is_authenticated %}
 <script src="{% static 'script/post-form.js' %}"></script>
@@ -140,8 +142,13 @@
     <div class="container button_area py-3">
       <div class="row">
         <div class="col-2 button-item">
-          <a href="#">
-          <img src="{% static 'assets/img/heart_before.png' %}" alt="">
+          <button type="button" class="like_button" id="ajax-like-for-diary {{diary.id}}">
+          {% if diary.id in liked_diaries_ids %}
+          <img id="like_after {{diary.id}}" src="{% static 'assets/img/heart_after.png' %}" alt="">
+          {% else %}
+          <img id="like_before {{diary.id}}" src="{% static 'assets/img/heart_before.png' %}" alt="">
+          {% endif %}
+          </button>
           </a>
         </div>
         <div class="col-2 button-item">
@@ -153,7 +160,7 @@
       </div>
       <div class="row">
         <div class="col-2 button-item">
-          <span class="post_value">
+          <span class="like_value" id="post_value {{diary.id}}">
           {{ diary.likes_set.all | length }}
           </span>
         </div>
@@ -161,6 +168,39 @@
     </div>
 
 </div>
+
+<script type="text/javascript">
+
+  document.getElementById('ajax-like-for-diary {{diary.id}}').addEventListener('click', e => {
+    e.preventDefault();
+    const url = "{% url "travelog_app:like_for_diary" %}";
+    fetch(url, {
+      method: 'POST',
+      body: `diary_id={{diary.id}}`,
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+        'X-CSRFToken': '{{ csrf_token }}',
+      },
+    }).then(response => {
+      return response.json();
+    }).then(response => {
+      const counter = document.getElementById('post_value {{diary.id}}')
+      counter.textContent = response.like_for_diary_count
+      if (response.method == 'create') {
+        var img = document.getElementById('like_before {{diary.id}}')
+        img.setAttribute('src', "{% static 'assets/img/heart_after.png' %}");
+        img.setAttribute('id', "like_after {{diary.id}}");
+      } else {
+        var img = document.getElementById('like_after {{diary.id}}')
+        img.setAttribute('src', "{% static 'assets/img/heart_before.png' %}");
+        img.setAttribute('id', "like_before {{diary.id}}");
+      }
+    }).catch(error => {
+      console.log(error);
+    });
+  });
+</script>
+
 {% endfor %}
 
 <!--下部メニュー-->

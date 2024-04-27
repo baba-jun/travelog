@@ -12,4 +12,5 @@ urlpatterns = [
     path('create_post/', views.CreatePostView.as_view(), name="create_post"),
     path('csv_upload/', views.upload_csv_data, name='csv_upload'),
     path('get_city_dropdown/', views.get_city_dropdown, name='get_city_dropdown'),
+    path('like_for_diary/', views.like_for_diary, name='like_for_diary'),
 ]+  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
