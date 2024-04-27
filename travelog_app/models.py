@@ -25,7 +25,7 @@ class cities(models.Model):
 
 class diary(models.Model):
     user_id = models.ForeignKey(CustomUser, verbose_name='User_ID', on_delete=models.PROTECT)
-    title = models.CharField(verbose_name='タイトル', null=False, blank=False, max_length=50, default=0)
+    title = models.CharField(verbose_name='タイトル', null=False, blank=False, max_length=50)
     comment = models.TextField(verbose_name='コメント', null=False, blank=False, max_length=200)
     country = models.CharField(verbose_name='観光地の国', null=True, blank=True,  max_length=30)
     prefectures = models.ForeignKey(prefectures, verbose_name='都道府県', blank=True, null=True, on_delete=models.PROTECT)
