@@ -4,16 +4,39 @@ from django.shortcuts import render
 from django.views import generic
 from .forms import DiaryCreateForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import diary, prefectures, cities
+from .models import diary, prefectures, cities, likes
 from django.urls import reverse_lazy
 from django.contrib import messages
 import csv
-from io import TextIOWrapper, StringIO
+from io import TextIOWrapper
 from django.http import JsonResponse
+from django.shortcuts import render, get_object_or_404
 
 
-class IndexView(generic.TemplateView):
+
+class IndexView(generic.ListView):
     template_name = "index.html"
+    model = diary
+
+class HomeView(generic.ListView):
+    template_name = "home.html"
+    model = diary
+
+    def get_context_data(self, **kwargs,): #ユーザが既にイイねしているかどうかの判断
+        context = super().get_context_data(**kwargs)
+
+        user = self.request.user
+
+        liked_diaries_ids = likes.objects.filter(user_id = user.id).values_list('diary_id', flat=True)
+
+        liked_diaries_ids = {
+            'liked_diaries_ids' : liked_diaries_ids,
+        }
+        context.update(liked_diaries_ids)
+        print(liked_diaries_ids)
+
+        return context
+
 
 class CreatePostView(LoginRequiredMixin, generic.CreateView):
     model = diary
@@ -31,6 +54,28 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
     def form_invalid(self, form: BaseModelForm) -> HttpResponse:
         messages.success(self.request, '投稿失敗')
         return super().form_invalid(form)
+
+def like_for_diary(request):
+    diary_id = request.POST.get('diary_id')
+    context = {
+        'user': request.user.id,
+    }
+    diary_ojb = get_object_or_404(diary, id=diary_id)
+    like = likes.objects.filter(diary_id=diary_ojb, user_id=request.user.id)
+
+    if like.exists():
+        like.delete()
+        context['method'] = 'delete'
+    else:
+        like.create(diary_id=diary_ojb, user_id=request.user)
+        context['method'] = 'create'
+
+    context['like_for_diary_count'] = diary_ojb.likes_set.count()
+
+
+    return JsonResponse(context)
+
+
 
 def upload_csv_data(request):
     if 'csv_prefecture' in request.FILES:
