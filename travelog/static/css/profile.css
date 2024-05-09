@@ -1,0 +1,48 @@
+.profile-wrapper{
+    border-bottom: 1px solid rgb(65 64 64);
+}
+
+.user-info{
+    padding: 0;
+}
+
+.user-img-profile{
+    max-width: 18%;
+    padding: 0;
+}
+
+.profile-wrapper .user-name{
+    font-size: 25px;
+}
+
+.profile-text{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+}
+
+.profile-text{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.profile-text-bold{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.profile .btn{
+    width: 100%;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+
+.btn-secondary{
+    background-color: rgb(65 64 64);
+    color: white;
+}

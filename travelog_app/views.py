@@ -42,7 +42,7 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
     model = diary
     template_name = "diary_create.html"
     form_class = DiaryCreateForm
-    success_url = reverse_lazy("travelog_app:index")
+    success_url = reverse_lazy("travelog_app:Home")
 
     def form_valid(self, form: BaseModelForm) -> HttpResponse:
         post = form.save(commit=False)
@@ -54,6 +54,25 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
     def form_invalid(self, form: BaseModelForm) -> HttpResponse:
         messages.success(self.request, '投稿失敗')
         return super().form_invalid(form)
+
+class ProfileView(generic.ListView):
+    template_name = "profile.html"
+    model = diary
+
+    def get_context_data(self, **kwargs,): #ユーザが既にイイねしているかどうかの判断
+        context = super().get_context_data(**kwargs)
+
+        user = self.request.user
+
+        liked_diaries_ids = likes.objects.filter(user_id = user.id).values_list('diary_id', flat=True)
+
+        liked_diaries_ids = {
+            'liked_diaries_ids' : liked_diaries_ids,
+        }
+        context.update(liked_diaries_ids)
+        print(liked_diaries_ids)
+
+        return context
 
 def like_for_diary(request):
     diary_id = request.POST.get('diary_id')
