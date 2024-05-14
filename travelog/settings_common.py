@@ -119,6 +119,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'travelog','static'),
 )
 
+
 MEDIA_URL = '/media/'
 
 # Default primary key field type
