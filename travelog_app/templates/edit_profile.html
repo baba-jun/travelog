@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}投稿画面{% endblock %}
+
+{% block contents %}
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
+<script src="{% static 'script/post-form.js' %}"></script>
+</head>
+
+<div class="container my-div-style mt-3">
+    <div class="row posttextform">
+
+            <h2>投稿内容</h2>
+            <div class="col-8 my-3">
+                <label for="id_title" class="form-label"><span class="badge badge-required">必須</span>タイトル</label>
+                {{form.id}}
+            </div>
+
+            <div class="col-11 my-3">
+                <label for="id_comment" class="form-label"><span class="badge badge-required">必須</span>投稿本文</label>
+                {{form.username}}
+            </div>
+    </div>
+<div>
+
+<nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
+    <div class="container-fluid">
+        <ul class="navbar-nav w-100 nav-justified align-items-center">
+            <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
+            </li>
+            <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
+            </li>
+            <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
+            </li>
+            <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
+            </li>
+            <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="{% url 'travelog_app:profile' %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+{% endblock %}
