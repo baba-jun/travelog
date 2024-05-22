@@ -11,6 +11,11 @@ import csv
 from io import TextIOWrapper
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
+import os
+import PIL.Image
+import io
+from django.core.files.uploadedfile import InMemoryUploadedFile
+
 
 
 
@@ -45,8 +50,29 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
     success_url = reverse_lazy("travelog_app:Home")
 
     def form_valid(self, form: BaseModelForm) -> HttpResponse:
+        save_path = str("media/"+self.request.FILES['post_image1'].name)
+        up_data = self.request.FILES['post_image1']
+        with open(save_path, 'wb+') as i:
+            for chunk in up_data.chunks():
+                i.write(chunk)
+        with PIL.Image.open(save_path) as image:
+            os.remove(save_path)
+            
+            resized_height = 640 / int(image.size[0]) * image.size[1]
+            resized_image = image.resize((640, int(resized_height)))
+            if resized_height > 480:
+                resized_width = 480 / int(image.size[1]) * image.size[0]
+                resized_image = resized_image.resize((int(resized_width), 480))
+
+            image_io = io.BytesIO()
+            resized_image.save(image_io, format="JPEG")
+            image_file = InMemoryUploadedFile(image_io, field_name=None, name=save_path,
+                                              content_type="image/jpeg", size=image_io.getbuffer().nbytes,
+                                              charset=None)
+        
         post = form.save(commit=False)
         post.user_id = self.request.user
+        post.post_image1 = image_file
         post.save()
         messages.success(self.request, '投稿完了')
         return super().form_valid(form)

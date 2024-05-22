@@ -36,7 +36,7 @@ class diary(models.Model):
     comment = models.TextField(verbose_name='コメント', null=False, blank=False, max_length=200)
     country = models.CharField(verbose_name='観光地の国', null=True, blank=True,  max_length=30)
     prefectures = models.ForeignKey(prefectures, verbose_name='都道府県', blank=True, null=True, on_delete=models.PROTECT)
-    city = models.ForeignKey(cities, verbose_name='市町村区', blank=True, null=True, on_delete=models.PROTECT)
+    area = models.ForeignKey(areas, verbose_name='エリア', blank=True, null=True, on_delete=models.PROTECT)
     favorites = models.PositiveIntegerField(verbose_name='favorites', null=False, blank=False, default=0)
     post_image1 = models.ImageField(verbose_name='投稿画像', blank=True, null=True)
     post_image2 = models.ImageField(verbose_name='投稿画像', blank=True, null=True)

@@ -21,7 +21,7 @@ class DiaryCreateForm(forms.ModelForm):
     )
     class Meta:
         model = diary
-        fields = ('title', 'comment', 'country', 'prefectures','city','post_image1','post_image2','post_image3','post_image4')
+        fields = ('title', 'comment', 'country', 'prefectures','area','post_image1','post_image2','post_image3','post_image4')
         widgets = {
             'title' : forms.TextInput(attrs={'placeholder': 'タイトルを入力','class': 'form-control'}),
             'comment' : forms.Textarea(attrs={'placeholder': 'コメントを入力','class': 'form-control'}),
