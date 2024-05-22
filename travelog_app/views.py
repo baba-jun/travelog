@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.views import generic
 from .forms import DiaryCreateForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import diary, prefectures, cities, likes
+from .models import diary, prefectures, cities, areas, likes
 from django.urls import reverse_lazy
 from django.contrib import messages
 import csv
@@ -118,15 +118,26 @@ def upload_csv_data(request):
             print(line[2])
             city.save()
 
+    elif 'csv_area' in request.FILES:
+        form_data = TextIOWrapper(request.FILES['csv_area'].file, encoding='utf-8')
+        csv_file = csv.reader(form_data)
+        prefecture = prefectures()
+        for line in csv_file:
+            area = areas()
+            area.prefecture_name = prefectures.objects.get(prefecture_name=line[0])
+            area.area_name = line[1]
+            print(line[1])
+            area.save()
+
 
     return render(request, 'csv_upload.html')
 
-def get_city_dropdown(request):
-    prefectures_dropdown_value = request.GET.get('id_prefectures_value')
+def get_area_dropdown(request):
+    prefectures_dropdown_text = request.GET.get('prefectures_text')
 
-    city_dropdown_choices = cities.objects.filter(prefecture_id = prefectures_dropdown_value).values("city_name","city_id")
+    area_dropdown_choices = areas.objects.filter(prefecture_name = prefectures_dropdown_text).values("area_name","area_name")
 
-    city_dropdown_choices_list = [{'city_name': '選択してください', 'city_id': ''}]
-    city_dropdown_choices_list.extend(list(city_dropdown_choices))
+    area_dropdown_choices_list = [{'area_name': '選択してください', 'area_name': ''}]
+    area_dropdown_choices_list.extend(list(area_dropdown_choices))
 
-    return JsonResponse({'city_dropdown_choices': city_dropdown_choices_list})
+    return JsonResponse({'area_dropdown_choices': area_dropdown_choices_list})

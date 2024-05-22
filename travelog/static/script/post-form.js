@@ -79,24 +79,25 @@ $(document).on('change', '#id_post_image4', function(){
 // main.js
 $(function() {
     $('#id_prefectures').on('change', function() {
-      var PrefectureDropdownValue = $(this).val();
-      
+      var SelectedPrefectureDropdown = $(this).children("option:selected"); 
+      var SelectedPrefectureText = SelectedPrefectureDropdown.text();
       $.ajax({
-        url: '/get_city_dropdown/',
+        url: '/get_area_dropdown/',
         data: {
-          'id_prefectures_value': PrefectureDropdownValue
+          'prefectures_text': SelectedPrefectureText
         },
         dataType: 'json',
         success: function(data) {
-          var CityDropdownChoices = data.city_dropdown_choices;
-          var CityDropdown = $('#id_city');
+          var AreaDropdownChoices = data.area_dropdown_choices;
+          var AreaDropdown = $('#id_areas');
           
-          CityDropdown.empty();
-          $.each(CityDropdownChoices, function(index, value) {
-            CityDropdown.append($('<option>').text(value.city_name).val(value.city_id));
+          AreaDropdown.empty();
+          $.each(AreaDropdownChoices, function(index, value) {
+            AreaDropdown.append($('<option>').text(value.area_name).val(value.area_name));
           });
         }
       });
     });
   });
+  
   

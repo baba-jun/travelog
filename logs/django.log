@@ -3268,3 +3268,266 @@ Traceback (most recent call last):
     raise DisallowedHost(msg)
 django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'dev.10ravelog.com'. You may need to add 'dev.10ravelog.com' to ALLOWED_HOSTS.
 2024-05-22 16:47:20,639	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2024-05-22 19:02:52,936	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 19:43:42,773	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 117, in upload_csv_data
+    city.prefecture_id = prefectures.objects.get(prefecture_id = line[2])
+IndexError: list index out of range
+2024-05-22 19:44:28,798	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 117, in upload_csv_data
+    city.prefecture_id = prefectures.objects.get(prefecture_id = line[2])
+IndexError: list index out of range
+2024-05-22 19:44:29,030	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 19:44:41,328	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 127, in upload_csv_data
+    area.prefecture_name = line[0]
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/fields/related_descriptors.py", line 237, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'北海道'": "areas.prefecture_name" must be a "prefectures" instance.
+2024-05-22 19:44:41,565	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 19:52:43,394	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 127, in upload_csv_data
+    area.prefecture_name = line[0]
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/fields/related_descriptors.py", line 237, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'北海道'": "areas.prefecture_name" must be a "prefectures" instance.
+2024-05-22 19:52:43,633	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 19:54:42,446	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 127, in upload_csv_data
+    area.prefecture_name = line[0]
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/fields/related_descriptors.py", line 237, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'北海道'": "areas.prefecture_name" must be a "prefectures" instance.
+2024-05-22 19:54:42,683	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 20:21:16,860	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 20:21:16,872	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-22 20:35:47,335	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 20:35:47,335	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /cgi-bin/luci/;stok=/locale
+2024-05-22 20:43:22,671	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 127, in upload_csv_data
+    area.prefecture_name = prefecture.objects.get(prefecture_name=line[0])
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/manager.py", line 186, in __get__
+    raise AttributeError(
+AttributeError: Manager isn't accessible via prefectures instances
+2024-05-22 20:43:22,915	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 20:46:09,702	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 127, in upload_csv_data
+    area.prefecture_name = prefectures.objects.get(prefecture_name=line[0])
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+travelog_app.models.prefectures.DoesNotExist: prefectures matching query does not exist.
+2024-05-22 20:46:09,936	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 20:47:44,257	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 20:47:53,239	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 21:08:12,840	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 21:13:14,783	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 21:13:14,784	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-22 21:21:35,899	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 21:21:35,900	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-22 21:21:52,126	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 21:21:52,127	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2024-05-22 21:32:34,215	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-22 21:51:11,655	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 21:51:11,657	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-22 21:55:39,981	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /get_city_dropdown/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/sql/query.py", line 2142, in add_fields
+    join_info = self.setup_joins(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/sql/query.py", line 1808, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/sql/query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'areas_name' into field. Choices are: area_name, id, prefecture_name, prefecture_name_id
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 138, in get_area_dropdown
+    area_dropdown_choices = areas.objects.filter(prefecture_name = prefectures_dropdown_text).values("areas_name","areas_name")
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/query.py", line 1298, in values
+    clone = self._values(*fields, **expressions)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/query.py", line 1293, in _values
+    clone.query.set_values(fields)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/sql/query.py", line 2437, in set_values
+    self.add_fields(field_names, True)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/sql/query.py", line 2175, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'areas_name' into field. Choices are: area_name, id, prefecture_name, prefecture_name_id
+2024-05-22 22:02:54,807	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /get_city_dropdown/
+2024-05-22 22:04:08,217	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /get_city_dropdown/
+2024-05-22 22:05:25,944	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /get_city_dropdown/
+2024-05-22 22:07:20,244	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223:443'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223:443'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 22:07:20,245	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-22 22:07:53,999	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 22:07:53,999	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-22 22:08:04,079	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /get_city_dropdown/
+2024-05-22 22:08:53,888	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 22:08:53,889	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /.git/config
+2024-05-22 22:09:55,805	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /get_city_dropdown/
+2024-05-22 22:51:01,958	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 22:51:01,959	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /cgi-bin/luci/;stok=/locale
+2024-05-22 22:59:27,000	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 22:59:27,001	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /.git/config
+2024-05-22 23:24:36,728	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-22 23:24:36,735	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /cgi-bin/luci/;stok=/locale

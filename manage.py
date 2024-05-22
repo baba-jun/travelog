@@ -15,7 +15,7 @@ except ImportError as exc:
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "travelog.settings_dev")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "travelog.settings")
     execute_from_command_line(sys.argv)
 
 

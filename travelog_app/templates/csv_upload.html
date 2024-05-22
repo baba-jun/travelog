@@ -17,4 +17,11 @@
   <button type="submit" class="btn" name="button">アップロード</button>
 </form>
 
+<h3>エリアファイルアップロード</h3>
+<form action="{% url 'travelog_app:csv_upload' %}" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" class="dropify" data-default-file="エリアファイルを選択してください" name="csv_area">
+  <button type="submit" class="btn" name="button">アップロード</button>
+</form>
+
 {% endblock contents %}

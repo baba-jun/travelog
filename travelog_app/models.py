@@ -4,13 +4,13 @@ from accounts.models import CustomUser
 
 class prefectures(models.Model):
     prefecture_id = models.CharField(verbose_name='都道府県コード', null=False, blank=False, max_length=2, primary_key=True)
-    prefecture_name = models.CharField(verbose_name='都道府県名', null=False, blank=False, max_length=4)
+    prefecture_name = models.CharField(verbose_name='都道府県名', null=False, blank=False, max_length=4,unique=True)
 
     class Meta:
         verbose_name_plural = 'prefectures'
 
     def __str__(self):
-        return self.prefecture_id
+        return self.prefecture_name  
 
 class cities(models.Model):
     city_id = models.CharField(verbose_name='市区町村コード', null=False, blank=False, max_length=5, primary_key=True)
@@ -22,6 +22,13 @@ class cities(models.Model):
 
     def __str__(self):
         return self.city_id
+    
+class areas(models.Model):
+    area_name = models.CharField(verbose_name='エリア名', null=False, blank=False, max_length=50)
+    prefecture_name = models.ForeignKey(prefectures, db_column="prefecture_name",to_field='prefecture_name',verbose_name='都道府県名', on_delete=models.PROTECT)
+    
+    def __str__(self):
+        return self.area_name
 
 class diary(models.Model):
     user_id = models.ForeignKey(CustomUser, verbose_name='User_ID', on_delete=models.PROTECT)

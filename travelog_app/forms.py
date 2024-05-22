@@ -1,17 +1,17 @@
 from django import forms
-from .models import diary, prefectures, cities
+from .models import diary, prefectures, areas
 
 class CustomPrefecturesModelChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
          return obj.prefecture_name
 
-class CustomCitiesModelChoiceField(forms.ModelChoiceField):
+class CustomAreasModelChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
-         return obj.city_name
+         return obj.area_name
 
 class DiaryCreateForm(forms.ModelForm):
     prefectures = CustomPrefecturesModelChoiceField(queryset=prefectures.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)
-    city = CustomCitiesModelChoiceField(queryset=cities.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)
+    areas = CustomAreasModelChoiceField(queryset=areas.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)
     country = forms.ChoiceField(
         choices=(
             ('日本', '日本'),
