@@ -157,13 +157,13 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_KEY')
 EMAIL_USE_TLS = True
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 
-# メールアドレス認証に変更する設定
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_USERNAME_REQUIRED = True
 
-# サインアップにメールアドレス確認をはさむよう設定
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# allauthの設定
+ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'  # 必要に応じて設定を変更
+ACCOUNT_ADAPTER = 'accounts.adapter.CustomAccountAdapter'
 
 # ログイン/ログアウト後の遷移先を設定
 LOGIN_REDIRECT_URL = 'travelog_app:Home'
