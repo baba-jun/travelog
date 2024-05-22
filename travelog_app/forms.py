@@ -11,7 +11,7 @@ class CustomAreasModelChoiceField(forms.ModelChoiceField):
 
 class DiaryCreateForm(forms.ModelForm):
     prefectures = CustomPrefecturesModelChoiceField(queryset=prefectures.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)
-    areas = CustomAreasModelChoiceField(queryset=areas.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)
+    area = CustomAreasModelChoiceField(queryset=areas.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)
     country = forms.ChoiceField(
         choices=(
             ('日本', '日本'),

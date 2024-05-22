@@ -89,11 +89,11 @@ $(function() {
         dataType: 'json',
         success: function(data) {
           var AreaDropdownChoices = data.area_dropdown_choices;
-          var AreaDropdown = $('#id_areas');
+          var AreaDropdown = $('#id_area');
           
           AreaDropdown.empty();
           $.each(AreaDropdownChoices, function(index, value) {
-            AreaDropdown.append($('<option>').text(value.area_name).val(value.area_name));
+            AreaDropdown.append($('<option>').text(value.area_name).val(value.id));
           });
         }
       });

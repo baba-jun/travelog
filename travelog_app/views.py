@@ -161,9 +161,9 @@ def upload_csv_data(request):
 def get_area_dropdown(request):
     prefectures_dropdown_text = request.GET.get('prefectures_text')
 
-    area_dropdown_choices = areas.objects.filter(prefecture_name = prefectures_dropdown_text).values("area_name","area_name")
+    area_dropdown_choices = areas.objects.filter(prefecture_name = prefectures_dropdown_text).values("area_name","id")
 
-    area_dropdown_choices_list = [{'area_name': '選択してください', 'area_name': ''}]
+    area_dropdown_choices_list = [{'area_name': '選択してください', 'id': ''}]
     area_dropdown_choices_list.extend(list(area_dropdown_choices))
 
     return JsonResponse({'area_dropdown_choices': area_dropdown_choices_list})
