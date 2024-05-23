@@ -50,7 +50,7 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
     success_url = reverse_lazy("travelog_app:Home")
 
     def form_valid(self, form: BaseModelForm) -> HttpResponse:
-        image_list = ['post_image1']
+        image_list = ['post_image1','post_image2','post_image3','post_image4']
         image_file_list = []
         for image_name in image_list:
             if image_name in self.request.FILES:

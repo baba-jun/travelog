@@ -32,7 +32,7 @@
   </div>
 
 
-    <div id="carouselExample2" class="carousel slide carousel slide" data-bs-touch="true" data-bs-ride="true">
+    <div id="carouselExample{{diary.id}}" class="carousel slide carousel slide" data-bs-touch="true" data-bs-ride="true">
 
         <div class="carousel-inner">
           {% if diary.post_image1 %}
@@ -68,11 +68,11 @@
           {% endif %}
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -82,25 +82,25 @@
         {% if not diary.post_image1 or diary.post_image2 or diary.post_image3 %}
         <div class="carousel-indicators thumbnail_postimgs mb-1 pb-2">
           {% if diary.post_image1 %}
-          <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
+          <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
             <img src="{{ MEDIA_URL }}{{diary.post_image1}}" class="d-block w-100" alt="...">
           </button>
           {% endif %}
 
           {% if diary.post_image2 %}
-          <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="1" aria-label="Slide 1">
+          <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="1" aria-label="Slide 1">
             <img src="{{ MEDIA_URL }}{{diary.post_image2}}" class="d-block w-100" alt="...">
           </button>
           {% endif %}
 
           {% if diary.post_image3 %}
-          <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="2" aria-label="Slide 2">
+          <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="2" aria-label="Slide 2">
             <img src="{{ MEDIA_URL }}{{diary.post_image3}}" class="d-block w-100" alt="...">
           </button>
           {% endif %}
 
           {% if diary.post_image4 %}
-          <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="3" aria-label="Slide 2">
+          <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="3" aria-label="Slide 2">
             <img src="{{ MEDIA_URL }}{{diary.post_image4}}" class="d-block w-100" alt="...">
           </button>
           {% endif %}
