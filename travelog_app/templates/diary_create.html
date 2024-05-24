@@ -59,8 +59,8 @@
             </div>
 
             <div class="col-8 my-3">
-                <label for="id_cities" class="form-label">市区町村</label>
-                {{form.city}}
+                <label for="id_area" class="form-label">エリア</label>
+                {{form.area}}
             </div>
 
             <div class="col-12 my-3">
@@ -79,13 +79,13 @@
             <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
           </li>
           <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="#"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
+            <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
           </li>
           <li class="nav-item w-20 text-center">
             <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
           </li>
           <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
+            <a class="nav-link" href=""><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
           </li>
           <li class="nav-item w-20 text-center">
             <a class="nav-link" href="{% url 'travelog_app:profile' %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>

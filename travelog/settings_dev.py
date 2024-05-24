@@ -2,12 +2,12 @@ from .settings_common import *
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ""
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS')]
 
 # ロギング設定
 LOGGING = {
@@ -24,14 +24,14 @@ LOGGING = {
         # diaryアプリケーションが利用するロガー
         'travelog_app': {
             'handlers': ['console'],
-            'level': 'DEBUG',
+            'level': 'INFO',
         },
     },
 
     # ハンドラの設定
     'handlers': {
         'console': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'class': 'logging.StreamHandler',
             'formatter': 'dev'
         },
@@ -49,7 +49,4 @@ LOGGING = {
         },
     }
 }
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

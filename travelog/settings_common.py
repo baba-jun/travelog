@@ -145,13 +145,26 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',  # 管理サイト用(ユーザー名認証)
 )
 
-# メールアドレス認証に変更する設定
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_USERNAME_REQUIRED = True
+# Amazon SES関連設定
+'''
+AWS_SES_ACCESS_KEY_ID = os.environ.get('AWS_SES_ACCESS_KEY_ID')
+AWS_SES_SECRET_ACCESS_KEY = os.environ.get('AWS_SES_SECRET_ACCESS_KEY')
+'''
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'travelogapp.official@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_KEY')
+EMAIL_USE_TLS = True
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 
-# サインアップにメールアドレス確認をはさむよう設定
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+
+# allauthの設定
+ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_ADAPTER = 'accounts.adapter.CustomAccountAdapter'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_FORMS = {'signup': 'accounts.forms.CustomSignupForm'}
 
 # ログイン/ログアウト後の遷移先を設定
 LOGIN_REDIRECT_URL = 'travelog_app:Home'
@@ -169,6 +182,7 @@ DEFAULT_FROM_EMAIL = os.environ.get('FROM_EMAIL')
 # バックアップバッチ用
 BACKUP_PATH = 'backup/'
 NUM_SAVED_BACKUP = 30
+
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587

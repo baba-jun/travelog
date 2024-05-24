@@ -1,0 +1,556 @@
+2024-05-16 01:32:28,264	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /linusadmin-phpinfo.php
+2024-05-16 01:32:28,755	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /debug/default
+2024-05-16 01:32:29,240	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /info.php
+2024-05-16 01:32:29,748	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /phpinfo
+2024-05-16 01:32:30,245	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.meteor/packages
+2024-05-16 01:32:30,734	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /_profiler/phpinfo
+2024-05-16 01:32:31,241	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env.production
+2024-05-16 01:32:31,746	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.php
+2024-05-16 01:32:32,244	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /configuration.php-dist
+2024-05-16 01:32:32,732	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /application.properties
+2024-05-16 01:32:33,224	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web.config
+2024-05-16 01:32:34,746	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /info
+2024-05-16 01:32:35,227	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /app/routes.php
+2024-05-16 01:32:35,724	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /php-info.php
+2024-05-16 01:32:36,209	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /phpinfo.php
+2024-05-16 01:32:36,692	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /webroot/phpinfo.php
+2024-05-16 01:32:37,192	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /artisan/tinker
+2024-05-16 01:32:37,683	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/cache.php
+2024-05-16 01:32:38,188	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /php_info.php
+2024-05-16 01:32:38,680	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.properties
+2024-05-16 01:32:39,164	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /Packages.config
+2024-05-16 01:32:39,653	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/services.yaml
+2024-05-16 01:32:40,152	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.py
+2024-05-16 01:32:40,648	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.html
+2024-05-16 01:32:41,141	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/phpinfo.php
+2024-05-16 01:32:41,634	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /settings.py
+2024-05-16 01:32:43,637	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /views.py
+2024-05-16 01:32:44,117	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /public/index.php
+2024-05-16 01:32:44,608	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dashboard/phpinfo.php
+2024-05-16 01:32:45,115	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /app.py
+2024-05-16 01:32:45,600	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /public
+2024-05-16 01:32:46,093	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/main/resources/static
+2024-05-16 01:32:46,577	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /application.conf
+2024-05-16 01:32:47,059	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /infophp.php
+2024-05-16 01:32:47,557	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /php.php
+2024-05-16 01:32:48,041	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env.staging
+2024-05-16 01:32:48,534	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/mail.php
+2024-05-16 01:32:49,024	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/app.php
+2024-05-16 01:32:49,509	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /resources.py
+2024-05-16 01:32:50,755	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.php
+2024-05-16 01:32:51,255	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /infophp
+2024-05-16 01:32:52,504	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /phpversion.php
+2024-05-16 01:32:52,988	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /settings.json
+2024-05-16 01:32:53,497	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server.js
+2024-05-16 01:32:53,992	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /angular.json
+2024-05-16 01:32:54,490	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/index.js
+2024-05-16 01:32:55,710	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.js
+2024-05-16 01:32:56,205	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /rollup.config.js'
+2024-05-16 01:32:56,703	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/default.json
+2024-05-16 01:32:57,198	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/main.js
+2024-05-16 01:32:57,699	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /tsconfig.json
+2024-05-16 01:32:58,199	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /router/index.js
+2024-05-16 01:32:58,706	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /protractor.conf.js
+2024-05-16 01:32:59,201	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /services.js
+2024-05-16 01:32:59,682	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /composer.json
+2024-05-16 01:33:00,176	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env.json
+2024-05-16 01:33:00,657	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /App.js
+2024-05-16 01:33:01,154	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /router.js
+2024-05-16 01:33:01,640	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /env.dev.js
+2024-05-16 01:33:02,115	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /vue.config.js
+2024-05-16 01:33:02,612	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /client/main.js
+2024-05-16 01:33:03,099	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /env.js
+2024-05-16 01:33:03,578	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/production.json
+2024-05-16 01:33:04,058	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /env.production.js
+2024-05-16 01:33:04,549	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /routes/index.js
+2024-05-16 01:33:05,035	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.js
+2024-05-16 01:33:05,534	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /console/base/config.json
+2024-05-16 01:33:06,027	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/config.json
+2024-05-16 01:33:07,229	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /info.json
+2024-05-16 01:33:07,719	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.json/env.config.js
+2024-05-16 01:33:08,210	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/constant.js
+2024-05-16 01:33:08,707	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/constant.js
+2024-05-16 01:33:09,202	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/server.js
+2024-05-16 01:33:09,702	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.src/index.js
+2024-05-16 01:33:10,184	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/mail.js
+2024-05-16 01:33:10,688	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/utils.js
+2024-05-16 01:33:11,184	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/helper.js
+2024-05-16 01:33:11,675	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /constant.js
+2024-05-16 01:33:12,165	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/mail.js
+2024-05-16 01:33:12,662	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /js/config.js
+2024-05-16 01:33:13,160	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/app.js
+2024-05-16 01:33:13,644	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/index.js
+2024-05-16 01:33:14,135	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/constants.js
+2024-05-16 01:33:14,627	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /admin-config.js
+2024-05-16 01:33:15,854	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/helper.js
+2024-05-16 01:33:17,558	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/helper.js
+2024-05-16 01:33:18,065	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /js/envConfig.js
+2024-05-16 01:33:18,550	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/index.js
+2024-05-16 01:33:19,039	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/mailer.js
+2024-05-16 01:33:19,539	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/app.js
+2024-05-16 01:33:20,029	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/helper.js
+2024-05-16 01:33:20,531	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/constant.js
+2024-05-16 01:33:21,515	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/mailserver.js
+2024-05-16 01:33:22,007	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.js
+2024-05-16 01:33:22,491	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/mailserver.js
+2024-05-16 01:33:22,979	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/utils.js
+2024-05-16 01:33:23,472	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/mail.js
+2024-05-16 01:33:24,452	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/mailer.js
+2024-05-16 01:33:24,945	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/constants.js
+2024-05-16 01:33:25,438	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/constants.js
+2024-05-16 01:33:25,946	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/index.js
+2024-05-16 01:33:26,944	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /sevice/dockerService.js
+2024-05-16 01:33:27,436	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/index.js
+2024-05-16 01:33:28,666	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /main.js
+2024-05-16 01:33:29,163	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/main.js
+2024-05-16 01:33:29,653	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.json
+2024-05-16 01:33:30,145	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /credentials/config.json
+2024-05-16 01:33:30,647	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/navigation.js
+2024-05-16 01:33:31,137	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /app/router.js
+2024-05-16 01:33:31,625	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /app.js
+2024-05-16 01:33:32,120	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /jsconfig.json
+2024-05-16 01:33:32,613	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /package.json
+2024-05-16 01:33:33,097	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.cordova/config.json
+2024-05-16 01:33:33,581	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.docker/config.json
+2024-05-16 01:33:34,068	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.jupyter/jupyter_notebook_config.json
+2024-05-16 01:33:34,558	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.json
+2024-05-16 01:33:35,041	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.deployment-config.json
+2024-05-16 01:33:35,525	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.docker/daemon.json
+2024-05-16 01:33:37,021	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.config/gatsby/config.json
+2024-05-16 01:33:37,503	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.lanproxy/config.json
+2024-05-16 01:33:37,988	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /console/payments/config.json
+2024-05-16 01:33:38,481	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /mailer.js
+2024-05-16 01:33:38,971	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/server.js
+2024-05-16 01:33:39,484	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/mailserver.js
+2024-05-16 01:33:39,987	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/helper.js
+2024-05-16 01:33:40,466	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/mailer.js
+2024-05-16 01:33:40,965	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.src/app.js
+2024-05-16 01:33:41,478	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/app.js
+2024-05-16 01:33:42,977	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /mailserver.js
+2024-05-16 01:33:43,456	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/mailer.js
+2024-05-16 01:33:44,944	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/constants.js
+2024-05-16 01:33:46,188	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/constant.js
+2024-05-16 01:33:46,696	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /charts-min.js
+2024-05-16 01:33:47,192	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /helper.js
+2024-05-16 01:33:47,690	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/server.js
+2024-05-16 01:33:48,185	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/constants.js
+2024-05-16 01:33:48,676	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/server.js
+2024-05-16 01:33:49,647	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/app.js
+2024-05-16 01:33:50,147	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/utils.js
+2024-05-16 01:33:50,642	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/index.js
+2024-05-16 01:33:52,106	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/mailer.js
+2024-05-16 01:33:52,596	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/utils.js
+2024-05-16 01:33:53,078	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/server.js
+2024-05-16 01:33:53,567	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/helper.js
+2024-05-16 01:33:54,060	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/constants.js
+2024-05-16 01:33:54,551	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/constant.js
+2024-05-16 01:33:56,051	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/helper/aws_s3.js
+2024-05-16 01:33:56,524	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/mailserver.js
+2024-05-16 01:33:57,008	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/utils.js
+2024-05-16 01:33:58,509	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/mailserver.js
+2024-05-16 01:33:58,996	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /constants.js
+2024-05-16 01:33:59,495	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/src.js
+2024-05-16 01:33:59,997	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/mail.js
+2024-05-16 01:34:00,499	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/server.js
+2024-05-16 01:34:01,728	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/constant.js
+2024-05-16 01:34:02,234	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/mail.js
+2024-05-16 01:34:02,724	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/config.js
+2024-05-16 01:34:03,223	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/web.js
+2024-05-16 01:34:03,720	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/mailserver.js
+2024-05-16 01:34:04,217	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/mailer.js
+2024-05-16 01:34:05,197	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/config.js/config/development.json
+2024-05-16 01:34:05,686	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.json
+2024-05-16 01:34:06,199	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /appsettings.json
+2024-05-16 01:34:06,704	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /env.development.js
+2024-05-16 01:34:07,190	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/environment.js
+2024-05-16 01:34:07,675	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /package-lock.json
+2024-05-16 01:34:08,173	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /vite.config.js
+2024-05-16 01:34:09,175	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 01:34:51,944	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /aaa9
+2024-05-16 01:34:53,556	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /aab8
+2024-05-16 02:30:28,528	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 02:30:28,726	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 02:54:16,521	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 02:54:17,764	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 04:52:47,686	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 04:52:47,906	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 05:36:50,954	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 05:36:51,296	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 06:09:48,063	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-16 06:09:48,064	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-16 06:43:52,588	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //cdn.js
+2024-05-16 06:43:52,590	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //code.jquery.com/jquery-3.7.1.js
+2024-05-16 06:43:52,592	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dist/js/bootstrap.bundle.min.js
+2024-05-16 06:43:53,474	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //use.fontawesome.com/releases/v5.15.3/js/all.js
+2024-05-16 06:44:24,591	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //cdn.js
+2024-05-16 06:44:24,593	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //code.jquery.com/jquery-3.7.1.js
+2024-05-16 06:44:24,605	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //use.fontawesome.com/releases/v5.15.3/js/all.js
+2024-05-16 06:44:24,653	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dist/js/bootstrap.bundle.min.js
+2024-05-16 06:44:49,393	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //cdn.js
+2024-05-16 06:44:49,395	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //code.jquery.com/jquery-3.7.1.js
+2024-05-16 06:44:49,397	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dist/js/bootstrap.bundle.min.js
+2024-05-16 06:44:49,415	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: //use.fontawesome.com/releases/v5.15.3/js/all.js
+2024-05-16 07:18:39,888	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-16 08:45:50,388	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 08:45:50,706	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 09:08:15,451	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 09:08:16,032	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 09:15:58,664	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-16 09:15:58,664	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /setup.cgi
+2024-05-16 09:55:21,393	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/index.js
+2024-05-16 09:55:21,878	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /pbackend/config.json
+2024-05-16 09:55:22,352	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/config/common.js
+2024-05-16 09:55:22,853	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/common.js
+2024-05-16 09:55:23,820	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/helper/aws_s3.js
+2024-05-16 09:55:25,817	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.js
+2024-05-16 09:55:26,318	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /app/config/aws-credentials.json
+2024-05-16 09:55:26,828	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/index.js
+2024-05-16 09:55:27,311	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/controller.js
+2024-05-16 09:55:27,799	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/utils.js
+2024-05-16 09:55:28,301	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/config/database.js
+2024-05-16 09:55:28,787	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/config.js
+2024-05-16 09:55:29,275	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.js
+2024-05-16 09:55:29,764	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/utils.js
+2024-05-16 09:55:30,253	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/helper.js
+2024-05-16 09:55:30,753	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/utils.js
+2024-05-16 09:55:31,243	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/app.js
+2024-05-16 09:55:31,757	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /_wpeprivate/config.json
+2024-05-16 09:55:32,255	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /env.js
+2024-05-16 09:55:32,760	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /mailserver.js
+2024-05-16 09:55:33,248	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/controller.js
+2024-05-16 09:55:33,747	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/constants.js
+2024-05-16 09:55:34,243	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /mail.js
+2024-05-16 09:55:34,736	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/controller.js
+2024-05-16 09:55:35,231	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/config/common.js
+2024-05-16 09:55:35,721	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /helper.js
+2024-05-16 09:55:36,209	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/helper.js
+2024-05-16 09:55:36,709	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/mail.js
+2024-05-16 09:55:37,198	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /API/config/common.js
+2024-05-16 09:55:37,699	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/server.js
+2024-05-16 09:55:38,196	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/config/database.js
+2024-05-16 09:55:38,693	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/mail.js
+2024-05-16 09:55:39,172	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.deployment-config.json
+2024-05-16 09:55:39,646	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/constants.js
+2024-05-16 09:55:40,134	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/mailserver.js
+2024-05-16 09:55:40,625	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/config/common.js
+2024-05-16 09:55:41,116	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/config.json
+2024-05-16 09:55:41,604	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.json
+2024-05-16 09:55:42,094	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/config.json
+2024-05-16 09:55:42,593	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/database.js
+2024-05-16 09:55:43,580	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.jupyter/jupyter_notebook_config.json
+2024-05-16 09:55:44,071	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/mailer.js
+2024-05-16 09:55:44,562	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/config.js
+2024-05-16 09:55:45,060	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/constant.js
+2024-05-16 09:55:45,560	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/constant.js
+2024-05-16 09:55:46,049	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/constant.js
+2024-05-16 09:55:46,553	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.docker/daemon.json
+2024-05-16 09:55:47,060	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/config/database.js
+2024-05-16 09:55:47,543	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.lanproxy/config.json
+2024-05-16 09:55:48,024	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /js/config.js
+2024-05-16 09:55:48,508	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/mailserver.js
+2024-05-16 09:55:48,998	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/src.js
+2024-05-16 09:55:49,516	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/mailer.js
+2024-05-16 09:55:50,513	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /console/base/config.json
+2024-05-16 09:55:51,006	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/controller.js
+2024-05-16 09:55:51,516	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/server.js
+2024-05-16 09:55:52,021	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /js/envConfig.js
+2024-05-16 09:55:52,992	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/helper.js
+2024-05-16 09:55:53,478	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /controller.js
+2024-05-16 09:55:53,971	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/server.js
+2024-05-16 09:55:54,455	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /console/base/config.json
+2024-05-16 09:55:54,950	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/config/constants.js
+2024-05-16 09:55:55,452	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/helper.js
+2024-05-16 09:55:55,944	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/constants.js
+2024-05-16 09:55:56,452	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/app.js
+2024-05-16 09:55:56,948	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/constant.js
+2024-05-16 09:55:57,443	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/helper.js
+2024-05-16 09:55:57,947	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/config/database.js
+2024-05-16 09:55:58,436	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/server.js
+2024-05-16 09:55:58,918	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/mailer.js
+2024-05-16 09:55:59,418	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/mail.js
+2024-05-16 09:55:59,915	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/config/common.js
+2024-05-16 09:56:00,419	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.docker/daemon.json
+2024-05-16 09:56:00,920	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.cordova/config.json
+2024-05-16 09:56:01,407	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /info.json
+2024-05-16 09:56:01,897	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/constant.js
+2024-05-16 09:56:02,395	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/config/template.js
+2024-05-16 09:56:03,363	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/helper.js
+2024-05-16 09:56:03,850	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/mail.js
+2024-05-16 09:56:04,358	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/mailer.js
+2024-05-16 09:56:04,868	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.js
+2024-05-16 09:56:05,361	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/config/constants.js
+2024-05-16 09:56:06,339	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/mail.js
+2024-05-16 09:56:06,827	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/index.js
+2024-05-16 09:56:07,317	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/controller.js
+2024-05-16 09:56:07,816	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/config/common.js
+2024-05-16 09:56:08,309	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/web.js
+2024-05-16 09:56:08,787	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/index.js
+2024-05-16 09:56:09,271	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/utils.js
+2024-05-16 09:56:09,757	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/mailserver.js
+2024-05-16 09:56:10,244	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.json
+2024-05-16 09:56:10,732	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/config/template.js
+2024-05-16 09:56:11,217	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server.js
+2024-05-16 09:56:11,704	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.config/gatsby/config.json
+2024-05-16 09:56:12,187	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.deployment-config.json
+2024-05-16 09:56:12,671	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/server.js
+2024-05-16 09:56:13,155	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/mailserver.js
+2024-05-16 09:56:14,119	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/constants.js
+2024-05-16 09:56:15,104	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /info.json
+2024-05-16 09:56:15,593	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.docker/config.json
+2024-05-16 09:56:16,092	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/constants.js
+2024-05-16 09:56:16,581	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.json
+2024-05-16 09:56:17,567	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/constants.js
+2024-05-16 09:56:18,050	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/config/database.js
+2024-05-16 09:56:18,547	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/mailer.js
+2024-05-16 09:56:19,045	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/config/template.js
+2024-05-16 09:56:19,547	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.json
+2024-05-16 09:56:20,520	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/server.js
+2024-05-16 09:56:21,010	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/mailserver.js
+2024-05-16 09:56:21,512	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/utils.js
+2024-05-16 09:56:21,998	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /mailer.js
+2024-05-16 09:56:22,489	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /js/config.js
+2024-05-16 09:56:22,962	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /API/common.js
+2024-05-16 09:56:23,453	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/config/template.js
+2024-05-16 09:56:23,943	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /constants.js
+2024-05-16 09:56:24,445	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /utils.js
+2024-05-16 09:56:24,943	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.config/gatsby/config.json
+2024-05-16 09:56:25,430	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /constant.js
+2024-05-16 09:56:25,913	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /console/payments/config.json
+2024-05-16 09:56:26,399	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/config/constants.js
+2024-05-16 09:56:26,893	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /app/config/aws-credentials.json
+2024-05-16 09:56:27,376	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/controller.js
+2024-05-16 09:56:27,861	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/mail.js
+2024-05-16 09:56:28,362	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/config/template.js
+2024-05-16 09:56:28,862	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config.js
+2024-05-16 09:56:29,349	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/server.js
+2024-05-16 09:56:29,843	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/app.js
+2024-05-16 09:56:30,346	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.docker/config.json
+2024-05-16 09:56:30,844	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.json
+2024-05-16 09:56:31,353	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.js
+2024-05-16 09:56:31,855	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/helper.js
+2024-05-16 09:56:32,344	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /env.config.js
+2024-05-16 09:56:32,841	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/index.js
+2024-05-16 09:56:33,334	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/mailserver.js
+2024-05-16 09:56:33,818	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.lanproxy/config.json
+2024-05-16 09:56:34,312	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/server.js
+2024-05-16 09:56:34,811	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /console/payments/config.json
+2024-05-16 09:56:35,291	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/controller.js
+2024-05-16 09:56:36,295	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/app.js
+2024-05-16 09:56:36,795	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/config/template.js
+2024-05-16 09:56:37,293	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/app.js
+2024-05-16 09:56:37,802	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/config/constants.js
+2024-05-16 09:56:38,288	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/config/constants.js
+2024-05-16 09:56:38,784	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/common.js
+2024-05-16 09:56:39,279	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/config.js
+2024-05-16 09:56:39,780	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/app.js
+2024-05-16 09:56:40,278	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/mailer.js
+2024-05-16 09:56:40,766	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/config/common.js
+2024-05-16 09:56:41,280	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.cordova/config.json
+2024-05-16 09:56:41,800	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/index.js
+2024-05-16 09:56:42,300	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/controller.js
+2024-05-16 09:56:42,801	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.jupyter/jupyter_notebook_config.json
+2024-05-16 09:56:43,287	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/utils.js
+2024-05-16 09:56:43,776	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /web/config/constants.js
+2024-05-16 09:56:44,270	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/mailserver.js
+2024-05-16 09:56:44,773	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.js
+2024-05-16 09:56:45,780	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/app.js
+2024-05-16 09:56:46,271	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/constants.js
+2024-05-16 09:56:46,763	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/config/database.js
+2024-05-16 09:56:47,257	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/template.js
+2024-05-16 09:56:47,754	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/constant.js
+2024-05-16 09:56:48,250	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /_wpeprivate/config.json
+2024-05-16 09:56:48,746	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /server/index.js
+2024-05-16 09:56:49,243	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /config/utils.js
+2024-05-16 09:56:49,741	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/mailer.js
+2024-05-16 09:56:50,227	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /app.js
+2024-05-16 09:56:51,195	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /dev/config/common.js
+2024-05-16 09:56:51,690	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /api/constant.js
+2024-05-16 09:56:52,186	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /src/mail.js
+2024-05-16 09:56:52,680	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /backend/config.js
+2024-05-16 09:56:53,173	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /apis/.env
+2024-05-16 09:56:53,672	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env.backup
+2024-05-16 09:56:54,172	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env.bak
+2024-05-16 09:56:54,655	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.api.env
+2024-05-16 09:56:55,143	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 11:08:49,225	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-16 11:08:49,226	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /0bef
+2024-05-16 11:41:16,135	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 11:41:16,314	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 12:06:01,487	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 12:06:01,817	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 12:12:58,524	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 12:12:58,712	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 13:28:18,866	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 13:36:07,156	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 13:36:07,657	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 13:55:15,331	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 13:55:15,440	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 14:30:38,185	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 14:30:38,362	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 15:24:00,623	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 15:24:00,809	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 16:03:24,573	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /Public/home/js/check.js
+2024-05-16 16:16:33,603	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-05-16 16:16:33,603	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-16 16:18:53,856	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /portal/redlion
+2024-05-16 17:36:07,552	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 17:36:07,737	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 18:08:19,404	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 18:08:19,590	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 19:05:44,932	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-16 19:09:25,950	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.git/config
+2024-05-16 19:27:07,305	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /index.html
+2024-05-16 19:34:17,305	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /+CSCOE+/logon.html
+2024-05-16 19:35:47,671	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /.env
+2024-05-16 19:35:47,857	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (CSRF cookie not set.): /
+2024-05-16 19:48:53,446	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /logon.htm
+2024-05-16 19:56:31,268	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-16 19:56:31,270	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /login.jsp
+2024-05-16 20:03:13,926	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-16 20:03:13,927	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /doc/index.html
+2024-05-16 20:28:11,248	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-16 20:28:11,250	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /hudson
+2024-05-16 20:46:08,586	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-16 20:46:08,587	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /druid/index.html
+2024-05-16 22:37:29,212	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-16 22:37:29,213	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-16 22:45:15,347	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-16 22:57:12,767	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-16 22:57:12,768	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /actuator/health
+2024-05-16 23:27:08,714	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-16 23:27:08,714	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /cgi-bin/luci/;stok=/locale
+2024-05-16 23:30:45,245	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-17 00:38:02,169	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-17 00:38:02,170	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon-32x32.png
+2024-05-17 01:27:11,747	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '44.209.100.19'. You may need to add '44.209.100.19' to ALLOWED_HOSTS.
+2024-05-17 01:27:11,748	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /.env
