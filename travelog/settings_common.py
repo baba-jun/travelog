@@ -182,3 +182,10 @@ DEFAULT_FROM_EMAIL = os.environ.get('FROM_EMAIL')
 # バックアップバッチ用
 BACKUP_PATH = 'backup/'
 NUM_SAVED_BACKUP = 30
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'travelogapp.official@gmail.com'
+EMAIL_HOST_PASSWORD = os.environ.get('HOST_PASSWORD')
+EMAIL_USE_TLS = True

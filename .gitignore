@@ -5,3 +5,4 @@ staticfiles/
 venv/
 settings_secret.py
 media
+logs
