@@ -1,9 +1,9 @@
 from django.forms import BaseModelForm
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic.edit import UpdateView
-from .forms import CustomUserEditForm, DiaryCreateForm
+from .forms import CustomUserEditForm, DiaryCreateForm, PrefectureForm, AreaForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CustomUser, diary, prefectures, cities, areas, likes
 from django.urls import reverse_lazy
@@ -16,6 +16,7 @@ import os
 import PIL.Image
 import io
 from django.core.files.uploadedfile import InMemoryUploadedFile
+from django.db.models import Q
 
 
 
@@ -39,9 +40,26 @@ class HomeView(generic.ListView):
             'liked_diaries_ids' : liked_diaries_ids,
         }
         context.update(liked_diaries_ids)
-        print(liked_diaries_ids)
 
         return context
+    
+
+def diary_search_view(request):
+    prefectures_form = PrefectureForm()
+    area_form = AreaForm()
+    diaries = None
+    if request.method == 'POST':
+        area_name = request.POST.get('area_name')
+        if area_name:
+            diaries = diary.objects.filter(area=area_name)
+    
+    context = {
+        'prefecture_form': prefectures_form,
+        'diaries': diaries,
+        'area_form': area_form
+    }
+    
+    return render(request, 'search.html', context)
 
     
 class ProfileEditView(LoginRequiredMixin, UpdateView):

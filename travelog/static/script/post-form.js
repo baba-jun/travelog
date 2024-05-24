@@ -76,7 +76,6 @@ $(document).on('change', '#id_post_image4', function(){
 });
 
 // 地区町村メニューの設定
-// main.js
 $(function() {
     $('#id_prefectures').on('change', function() {
       var SelectedPrefectureDropdown = $(this).children("option:selected"); 

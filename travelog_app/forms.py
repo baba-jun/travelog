@@ -14,6 +14,12 @@ class CustomPrefecturesModelChoiceField(forms.ModelChoiceField):
 class CustomAreasModelChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
          return obj.area_name
+     
+class PrefectureForm(forms.Form):
+    prefectures = forms.ModelChoiceField(queryset=prefectures.objects.all(), label='都道府県', empty_label="選択してください")
+    
+class AreaForm(forms.Form):
+    area = forms.ModelChoiceField(queryset=areas.objects.all(), label='エリア', empty_label="選択してください")
 
 class DiaryCreateForm(forms.ModelForm):
     prefectures = CustomPrefecturesModelChoiceField(queryset=prefectures.objects.all(), widget=forms.Select(attrs={'class': 'form-select'}), required = False)

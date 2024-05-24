@@ -1,55 +1,56 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}
-  プロフィール
-{% endblock %}
+{% block title %}投稿画面{% endblock %}
 
 {% block contents %}
-  <link href="{% static 'css/profile.css' %}" rel="stylesheet" />
-  <div class="profile-wrapper">
-    <img src="{% static 'assets/img/header.jpg' %}" class="w-100" alt="...">
-    <div class="container profile px-3 pb-4">
-      <div class="row py-2">
-        <div class="user-info d-flex flex-row">
-          <img src="{{ MEDIA_URL }}{{user.profile_img}}" class="user-img-profile px-2 rounded-circle" alt="..." />
-          <h2 class="user-name text-body py-2">{{ user.display_name }}</h2>
-        </div>
-      </div>
-      <div class="row">
-        <p class="profile-text py-3">
-            プロフィールです
-        </p>
-      </div>
-      <div class="row">
-        <div class="col px-2">
-          <span class="profile-text-bold">100</span><span class="profile-text">&nbsp;フォロー</span>
-          <span class="profile-text-bold">&nbsp;950</span><span class="profile-text">&nbsp;フォロワー</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 px-2 pt-3">
-        <button type="button" class="btn btn-secondary px-3 py-2">プロフィールを編集</button>
-        </div>
-        <div class="col-6 px-2 pt-3">
-          <button type="button" onclick="location.href='{% url 'account_logout' %}'" class="btn btn-danger px-3 py-2">ログアウト</button>
-          </div>
-      </div>
+
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
+<script src="{% static 'script/post-form.js' %}"></script>
+</head>
+
+<script>
+  $(function() {
+    $('#id_area').on('change', function() {
+      var select = document.getElementById('id_area');
+      var selectedText = select.options[select.selectedIndex].text;
+      document.getElementById('area_name').value = selectedText;
+  });
+});
+</script>
+
+<div class="container my-div-style mt-3">
+    <div class="row posttextform">
+
+            <h2>投稿検索</h2>
+
+            <h2>都道府県を選択</h2>
+            <form method="post" name="prefecture_form">
+                {% csrf_token %}
+                {{ prefecture_form.as_p }}
+            </form>
+
+            <h2>エリアを選択</h2>
+            <form method="post" name="area_form">
+                {% csrf_token %}
+                {{ area_form.as_p }}
+                <input type="hidden" name="area_name" id="area_name">
+                <button type="submit">検索</button>
+            </form>
     </div>
-  </div>
-
-  <div class="card w-100 text-body">
-
-
-    <!--ここから投稿コンテンツ-->
-    {% for diary in diary_list %}
-      <div class="user-info d-flex flex-row">
-        <img src="{{ MEDIA_URL }}{{user.profile_img}}" class="user-img p-2 rounded-circle" alt="...">
+</div>
+{% if diaries %}
+{% for diary in diaries %}
+<div class="card w-100 text-body">
+<!--ここから投稿表示-->
+    <div class="user-info d-flex flex-row">
+        <img src="{{ MEDIA_URL }}{{diary.user_id.profile_img}}" class="user-img p-2 rounded-circle" alt="...">
         <h2 class="user-name text-body py-2">{{ diary.user_id.display_name}}</h2>
       </div>
     
     
-        <div id="carouselExample2" class="carousel slide carousel slide" data-bs-touch="true" data-bs-ride="true">
+        <div id="carouselExample{{diary.id}}" class="carousel slide carousel slide" data-bs-touch="true" data-bs-ride="true">
     
             <div class="carousel-inner">
               {% if diary.post_image1 %}
@@ -85,11 +86,11 @@
               {% endif %}
             </div>
     
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -99,25 +100,25 @@
             {% if not diary.post_image1 or diary.post_image2 or diary.post_image3 %}
             <div class="carousel-indicators thumbnail_postimgs mb-1 pb-2">
               {% if diary.post_image1 %}
-              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
+              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
                 <img src="{{ MEDIA_URL }}{{diary.post_image1}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
     
               {% if diary.post_image2 %}
-              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="1" aria-label="Slide 1">
+              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="1" aria-label="Slide 1">
                 <img src="{{ MEDIA_URL }}{{diary.post_image2}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
     
               {% if diary.post_image3 %}
-              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="2" aria-label="Slide 2">
+              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="2" aria-label="Slide 2">
                 <img src="{{ MEDIA_URL }}{{diary.post_image3}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
     
               {% if diary.post_image4 %}
-              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="3" aria-label="Slide 2">
+              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="3" aria-label="Slide 2">
                 <img src="{{ MEDIA_URL }}{{diary.post_image4}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
@@ -144,7 +145,7 @@
                   <ul class="list-group mb-4">
                     <li class="list-group-item"> <span class="fw-bold">国</span>：<a class="link-opacity-100" href="#">{{ diary.country}}</a></li>
                     <li class="list-group-item"><span class="fw-bold">都道府県</span>：<a class="link-opacity-100" href="#">{{ diary.prefectures.prefecture_name}}</a></li>
-                    <li class="list-group-item"><span class="fw-bold">市町村区</span>：<a class="link-opacity-100" href="#">{{ diary.area.area_name}}</a></li>
+                    <li class="list-group-item"><span class="fw-bold">エリア</span>：<a class="link-opacity-100" href="#">{{ diary.area}}</a></li>
                   </ul>
     
                   <a class="link-opacity-100" href="#">この観光地の位置</a>
@@ -154,36 +155,35 @@
             </div>
     
         <!--いいね、ブックマーク、シェアボタン-->
-
-
-    <div class="container button_area py-3">
-      <div class="row">
-        <div class="col-2 button-item">
-          <button type="button" class="like_button" id="ajax-like-for-diary {{diary.id}}">
-          {% if diary.id in liked_diaries_ids %}
-          <img id="like_after {{diary.id}}" src="{% static 'assets/img/heart_after.png' %}" alt="">
-          {% else %}
-          <img id="like_before {{diary.id}}" src="{% static 'assets/img/heart_before.png' %}" alt="">
-          {% endif %}
-          </button>
-          </a>
+    
+    
+        <div class="container button_area py-3">
+          <div class="row">
+            <div class="col-2 button-item">
+              <button type="button" class="like_button" id="ajax-like-for-diary {{diary.id}}">
+              {% if diary.id in liked_diaries_ids %}
+              <img id="like_after {{diary.id}}" src="{% static 'assets/img/heart_after.png' %}" alt="">
+              {% else %}
+              <img id="like_before {{diary.id}}" src="{% static 'assets/img/heart_before.png' %}" alt="">
+              {% endif %}
+              </button>
+              </a>
+            </div>
+            <div class="col-2 button-item">
+              <img src="{% static 'assets/img/bookmark_before.png' %}" alt="">
+            </div>
+            <div class="col-2 button-item">
+              <img src="{% static 'assets/img/share.png' %}" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2 button-item">
+              <span class="like_value" id="post_value {{diary.id}}">
+              {{ diary.likes_set.all | length }}
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/bookmark_before.png' %}" alt="">
-        </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/share.png' %}" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2 button-item">
-          <span class="like_value" id="post_value {{diary.id}}">
-          {{ diary.likes_set.all | length }}
-          </span>
-        </div>
-      </div>
-    </div>
-
     
     </div>
     
@@ -218,27 +218,35 @@
         });
       });
     </script>
-    
-    {% endfor %}
-    <nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
-      <div class="container-fluid">
-          <ul class="navbar-nav w-100 nav-justified align-items-center">
-            <li class="nav-item w-20 text-center">
-              <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-              <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-              <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-              <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-              <a class="nav-link" href="{% url 'travelog_app:profile' %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
-            </li>
-          </ul>
-      </div>
-    </nav>
+</div>
+{% endfor %}
+{% endif %}
+
+
+
+
+    <!--下部メニュー-->
+
+<nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
+    <div class="container-fluid">
+        <ul class="navbar-nav w-100 nav-justified align-items-center">
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
+          </li>
+          <li class="nav-item w-20 text-center">
+            <a class="nav-link" href="{% url 'travelog_app:profile' %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+<div>
 {% endblock %}
