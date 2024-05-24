@@ -66,10 +66,18 @@ class ProfileEditView(LoginRequiredMixin, UpdateView):
     model = CustomUser
     form_class = CustomUserEditForm
     template_name = 'edit_profile.html'
-    success_url = reverse_lazy('travelog_app:profile')
 
-    def get_object(self):
-        return self.request.user
+    def get_success_url(self):
+        return reverse_lazy('travelog_app:profile')
+    
+    def form_valid(self, form):
+        messages.success(self.request, 'プロフィール更新完了')
+        return super().form_valid(form)
+    
+    def form_invalid(self, form: BaseModelForm):
+        messages.success(self.request, 'プロフィール更新失敗')
+        return super().form_valid(form)
+    
 
 class CreatePostView(LoginRequiredMixin, generic.CreateView):
     model = diary

@@ -18,7 +18,7 @@
       </div>
       <div class="row">
         <p class="profile-text py-3">
-            プロフィールです
+            {{user.user_bio}}
         </p>
       </div>
       <div class="row">
@@ -29,7 +29,7 @@
       </div>
       <div class="row">
         <div class="col-6 px-2 pt-3">
-        <button type="button" class="btn btn-secondary px-3 py-2">プロフィールを編集</button>
+        <button type="button" onclick="location.href='{% url 'travelog_app:profile_edit' user.id %}'" class="btn btn-secondary px-3 py-2">プロフィールを編集</button>
         </div>
         <div class="col-6 px-2 pt-3">
           <button type="button" onclick="location.href='{% url 'account_logout' %}'" class="btn btn-danger px-3 py-2">ログアウト</button>
