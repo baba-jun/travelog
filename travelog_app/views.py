@@ -2,9 +2,10 @@ from django.forms import BaseModelForm
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import generic
-from .forms import DiaryCreateForm
+from django.views.generic.edit import UpdateView
+from .forms import CustomUserEditForm, DiaryCreateForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import diary, prefectures, cities, areas, likes
+from .models import CustomUser, diary, prefectures, cities, areas, likes
 from django.urls import reverse_lazy
 from django.contrib import messages
 import csv
@@ -42,6 +43,15 @@ class HomeView(generic.ListView):
 
         return context
 
+    
+class ProfileEditView(LoginRequiredMixin, UpdateView):
+    model = CustomUser
+    form_class = CustomUserEditForm
+    template_name = 'edit_profile.html'
+    success_url = reverse_lazy('travelog_app:profile')
+
+    def get_object(self):
+        return self.request.user
 
 class CreatePostView(LoginRequiredMixin, generic.CreateView):
     model = diary

@@ -4511,3 +4511,224 @@ Traceback (most recent call last):
     raise DisallowedHost(msg)
 django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
 2024-05-23 23:27:54,897	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-24 10:14:42,700	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-24 10:34:12,272	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /home/after_signup/
+2024-05-24 10:36:16,980	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /after_signup/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'instance'
+2024-05-24 10:36:17,224	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-24 10:42:19,000	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /after_signup
+2024-05-24 10:47:17,099	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /after_signup/15
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'instance'
+2024-05-24 10:47:17,321	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-24 10:49:35,811	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /after_signup/15
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/forms/models.py", line 356, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+2024-05-24 11:18:48,485	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-24 11:19:55,540	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: リレーション"accounts_customuser"の列"nick_name"のNULL値が非NULL制約に違反しています
+DETAIL:  失敗した行は(17, pbkdf2_sha256$390000$gb96d4liw6wsVakqXW1Tju$p53tZ1ay9OxbdLurAvAh..., null, f, app_admin2, , , urbanpark01@gmail.com, f, t, 2024-05-24 02:19:55.241212+00, null, null, ユーザー, user.png)を含みます
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/decorators.py", line 12, in wrap
+    resp = function(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/views.py", line 142, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/mixins.py", line 40, in dispatch
+    response = super().dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/mixins.py", line 105, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/mixins.py", line 69, in post
+    response = self.form_valid(form)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/views.py", line 148, in form_valid
+    self.user, resp = form.try_save(self.request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/forms.py", line 384, in try_save
+    user = self.save(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/forms.py", line 394, in save
+    adapter.save_user(request, user, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/allauth/account/adapter.py", line 321, in save_user
+    user.save()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/contrib/auth/base_user.py", line 69, in save
+    super().save(*args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: リレーション"accounts_customuser"の列"nick_name"のNULL値が非NULL制約に違反しています
+DETAIL:  失敗した行は(17, pbkdf2_sha256$390000$gb96d4liw6wsVakqXW1Tju$p53tZ1ay9OxbdLurAvAh..., null, f, app_admin2, , , urbanpark01@gmail.com, f, t, 2024-05-24 02:19:55.241212+00, null, null, ユーザー, user.png)を含みます
+
+2024-05-24 11:40:18,730	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-24 11:40:18,733	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-24 12:55:27,998	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-24 12:55:28,010	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: //
+2024-05-24 13:03:53,876	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223:443'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223:443'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-24 13:03:53,878	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-24 13:04:05,367	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-24 13:04:05,368	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-24 13:36:46,725	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-24 13:36:46,728	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /.env
+2024-05-24 13:36:47,266	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-24 13:36:47,266	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-24 14:54:36,143	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /robots.txt
+2024-05-24 14:54:39,641	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /ads.txt

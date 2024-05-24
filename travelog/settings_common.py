@@ -162,8 +162,9 @@ EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'none'  # 必要に応じて設定を変更
 ACCOUNT_ADAPTER = 'accounts.adapter.CustomAccountAdapter'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_FORMS = {'signup': 'accounts.forms.CustomSignupForm'}
 
 # ログイン/ログアウト後の遷移先を設定
 LOGIN_REDIRECT_URL = 'travelog_app:Home'

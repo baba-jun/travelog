@@ -11,17 +11,22 @@
 
 <div class="container my-div-style mt-3">
     <div class="row posttextform">
-
-            <h2>投稿内容</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
             <div class="col-8 my-3">
-                <label for="id_title" class="form-label"><span class="badge badge-required">必須</span>タイトル</label>
-                {{form.id}}
+                <label for="id_display_name" class="form-label"><span class="badge badge-required">必須</span>ニックネーム</label>
+                {{form.display_name}}
             </div>
 
-            <div class="col-11 my-3">
-                <label for="id_comment" class="form-label"><span class="badge badge-required">必須</span>投稿本文</label>
-                {{form.username}}
-            </div>
+            <label id="id_profile_img">
+                {{form.profile_img}}
+            </label>
+            <img id="preview">
+
+            <div class="col-12 my-3">
+                <button class="btn btn-primary w-100 submit-btn py-2 my-5" type="submit">登録する</button>
+                </div>
+          </form>
     </div>
 <div>
 

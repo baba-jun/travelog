@@ -1,5 +1,11 @@
 from django import forms
-from .models import diary, prefectures, areas
+from .models import CustomUser, diary, prefectures, areas
+
+class CustomUserEditForm(forms.ModelForm):
+    class Meta:
+        model  = CustomUser
+        fields = ['display_name', 'profile_img']
+    
 
 class CustomPrefecturesModelChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
