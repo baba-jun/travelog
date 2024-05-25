@@ -88,7 +88,7 @@
             <a class="nav-link" href=""><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
           </li>
           <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:profile' %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
+            <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
           </li>
         </ul>
     </div>

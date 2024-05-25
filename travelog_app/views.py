@@ -5,7 +5,7 @@ from django.views import generic
 from django.views.generic.edit import UpdateView
 from .forms import CustomUserEditForm, DiaryCreateForm, PrefectureForm, AreaForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import CustomUser, diary, prefectures, cities, areas, likes
+from .models import CustomUser, diary, prefectures, cities, areas, follows,likes
 from django.urls import reverse_lazy
 from django.contrib import messages
 import csv
@@ -16,7 +16,8 @@ import os
 import PIL.Image
 import io
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from django.db.models import Q
+from django.http import HttpResponse
+
 
 
 
@@ -68,7 +69,7 @@ class ProfileEditView(LoginRequiredMixin, UpdateView):
     template_name = 'edit_profile.html'
 
     def get_success_url(self):
-        return reverse_lazy('travelog_app:profile')
+        return reverse_lazy('travelog_app:profile', kwargs={'pk': self.request.user.id})
     
     def form_valid(self, form):
         messages.success(self.request, 'プロフィール更新完了')
@@ -125,21 +126,28 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
         return super().form_invalid(form)
 
 class ProfileView(generic.ListView):
-    template_name = "profile.html"
     model = diary
 
-    def get_context_data(self, **kwargs,): #ユーザが既にイイねしているかどうかの判断
+    def get_template_names(self):
+        user_id = int(self.kwargs['pk'])
+        if self.request.user.id == user_id:
+            return ['profile.html']
+        else:
+            return ['others_profile.html']
+        
+    def get_queryset(self):
+        user_id = int(self.kwargs['pk'])
+        return diary.objects.filter(user_id=user_id)
+
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
         user = self.request.user
+        others_user = get_object_or_404(CustomUser, id=int(self.kwargs['pk']))
+        context['others_user'] = others_user
 
-        liked_diaries_ids = likes.objects.filter(user_id = user.id).values_list('diary_id', flat=True)
-
-        liked_diaries_ids = {
-            'liked_diaries_ids' : liked_diaries_ids,
-        }
-        context.update(liked_diaries_ids)
-        print(liked_diaries_ids)
+        liked_diaries_ids = likes.objects.filter(user_id=user.id).values_list('diary_id', flat=True)
+        context['liked_diaries_ids'] = liked_diaries_ids
 
         return context
 
@@ -160,9 +168,16 @@ def like_for_diary(request):
 
     context['like_for_diary_count'] = diary_ojb.likes_set.count()
 
-
     return JsonResponse(context)
 
+def AddFollow(request, pk):
+    from_follow_id = request.user.id
+    to_follow_id = pk
+    obj = follows(from_follow=CustomUser.objects.get(id=from_follow_id), to_follow=CustomUser.objects.get(id=to_follow_id))
+    obj.save()
+ 
+    
+    return render(request, 'others_profile.html')
 
 
 def upload_csv_data(request):
