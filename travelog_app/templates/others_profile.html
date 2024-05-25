@@ -24,13 +24,17 @@
       </div>
       <div class="row">
         <div class="col px-2">
-          <span class="profile-text-bold">100</span><span class="profile-text">&nbsp;フォロー</span>
-          <span class="profile-text-bold">&nbsp;950</span><span class="profile-text">&nbsp;フォロワー</span>
+          <span class="profile-text-bold" id="count_follow">{{count_follow}}</span><span class="profile-text">&nbsp;フォロー</span>
+          <span class="profile-text-bold" id="count_follower">&nbsp;{{count_follower}}</span><span class="profile-text">&nbsp;フォロワー</span>
         </div>
       </div>
       <div class="row">
         <div class="col-6 px-2 pt-3">
-        <button type="button" value="{{others_user.id}}"  onclick="location.href='{% url 'travelog_app:follow_user' others_user.id %}'" id="follow_button" class="btn btn-secondary px-3 py-2">フォローする</button>
+          {% if follow == 'True' %}
+            <button type="button" value="{{others_user.id}}" id="follow_button" class="btn  follow px-3 py-2">フォロー中</button>
+          {% else %}
+            <button type="button" value="{{others_user.id}}" id="follow_button" class="btn  unfollow px-3 py-2">フォローする</button>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -58,7 +62,6 @@
               <div class="carousel-item active">
                 <figure class="figure">
                 <img src='{{ MEDIA_URL }}{{diary.post_image1}}' class="d-block w-100" data-bs-interval="false" alt="...">
-                <figcaption class="figure-caption post_img p-2">ここから入りました！</figcaption>
               </figure>
               </div>
               {% endif %}
@@ -67,7 +70,6 @@
               <div class="carousel-item">
                 <figure class="figure">
                 <img src='{{ MEDIA_URL }}{{diary.post_image2}}' class="d-block w-100" data-bs-interval="false" alt="...">
-                <figcaption class="figure-caption post_img p-2">ここでお参り</figcaption>
                 </figure>
               </div>
               {% endif %}
@@ -170,12 +172,6 @@
           </button>
           </a>
         </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/bookmark_before.png' %}" alt="">
-        </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/share.png' %}" alt="">
-        </div>
       </div>
       <div class="row">
         <div class="col-2 button-item">
@@ -190,10 +186,10 @@
     </div>
     
     <script type="text/javascript">
-    
+      // いいねボタン（非同期通信）
       document.getElementById('ajax-like-for-diary {{diary.id}}').addEventListener('click', e => {
         e.preventDefault();
-        const url = "{% url "travelog_app:like_for_diary" %}";
+        const url = "{% url 'travelog_app:like_for_diary' %}";
         fetch(url, {
           method: 'POST',
           body: `diary_id={{diary.id}}`,
@@ -219,25 +215,56 @@
           console.log(error);
         });
       });
+
+      // フォローボタン（非同期通信）
+      document.getElementById('follow_button').addEventListener('click', e => {
+        const to_follow_id = document.getElementById("follow_button").value
+        const url = "{% url 'travelog_app:follow_user' 0 %}".replace('0', to_follow_id);
+        e.preventDefault();
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+            'X-CSRFToken': '{{ csrf_token }}',
+          },
+        }).then(response => {
+          return response.json();
+        }).then(response => {
+          if (response.message == 'Success') {
+            var btn = document.getElementById('follow_button')
+            btn.style.backgroundColor = 'white'
+            btn.style.color = 'rgb(33 37 41)'
+            btn.style.border = 'solid 2px rgb(207 207 207)'
+            btn.textContent = 'フォロー中'
+          } else if (response.message == 'Already following') {
+            var btn = document.getElementById('follow_button')
+            btn.style.backgroundColor = 'rgb(33 37 41)'
+            btn.style.color = 'white'
+            btn.style.border = 'none'
+            btn.textContent = 'フォローする'
+          }else{
+            ;
+          }
+        }).catch(error => {
+          console.log(error);
+        });
+      });
     </script>
     
     {% endfor %}
     <nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
       <div class="container-fluid">
           <ul class="navbar-nav w-100 nav-justified align-items-center">
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
             </li>
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
             </li>
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
             </li>
-            <li class="nav-item w-20 text-center">
-              <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
             </li>
           </ul>

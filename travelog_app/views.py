@@ -6,6 +6,8 @@ from django.views.generic.edit import UpdateView
 from .forms import CustomUserEditForm, DiaryCreateForm, PrefectureForm, AreaForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CustomUser, diary, prefectures, cities, areas, follows,likes
+from django.core.exceptions import ObjectDoesNotExist
+from django.db import IntegrityError
 from django.urls import reverse_lazy
 from django.contrib import messages
 import csv
@@ -148,6 +150,14 @@ class ProfileView(generic.ListView):
 
         liked_diaries_ids = likes.objects.filter(user_id=user.id).values_list('diary_id', flat=True)
         context['liked_diaries_ids'] = liked_diaries_ids
+        
+        if follows.objects.filter(from_follow=user.id, to_follow=others_user.id).exists():
+            context['follow'] = 'True'
+        else:
+            context['follow'] = 'Faslse'
+            
+        context['count_follow'] = follows.objects.filter(from_follow=others_user.id).count()
+        context['count_follower'] = follows.objects.filter(to_follow=others_user.id).count()
 
         return context
 
@@ -171,13 +181,27 @@ def like_for_diary(request):
     return JsonResponse(context)
 
 def AddFollow(request, pk):
-    from_follow_id = request.user.id
-    to_follow_id = pk
-    obj = follows(from_follow=CustomUser.objects.get(id=from_follow_id), to_follow=CustomUser.objects.get(id=to_follow_id))
-    obj.save()
- 
-    
-    return render(request, 'others_profile.html')
+    try:
+        from_follow_id = request.user.id
+        to_follow_id = pk
+        from_follow_user = get_object_or_404(CustomUser, id=from_follow_id)
+        to_follow_user = get_object_or_404(CustomUser, id=to_follow_id)
+        
+        # フォロー関係の存在を確認し、既に存在する場合はスキップまたはエラーメッセージを返す
+        if follows.objects.filter(from_follow=from_follow_user, to_follow=to_follow_user).exists():
+            follows.objects.filter(from_follow=from_follow_user, to_follow=to_follow_user).delete()
+            return JsonResponse({"message": "Already following"})
+        
+        obj = follows(from_follow=from_follow_user, to_follow=to_follow_user)
+        obj.save()
+        return JsonResponse({"message": "Success"}, status=200)
+    except ObjectDoesNotExist:
+        return JsonResponse({"message": "User not found"}, status=404)
+    except IntegrityError:
+        return JsonResponse({"message": "Integrity error occurred"}, status=400)
+    except Exception as e:
+        # その他のエラー処理
+        return JsonResponse({"message": f"An error occurred: {str(e)}"}, status=500)
 
 
 def upload_csv_data(request):

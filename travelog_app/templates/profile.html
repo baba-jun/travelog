@@ -23,8 +23,8 @@
       </div>
       <div class="row">
         <div class="col px-2">
-          <span class="profile-text-bold">100</span><span class="profile-text">&nbsp;フォロー</span>
-          <span class="profile-text-bold">&nbsp;950</span><span class="profile-text">&nbsp;フォロワー</span>
+          <span class="profile-text-bold" id="count_follow">{{count_follow}}</span><span class="profile-text">&nbsp;フォロー</span>
+          <span class="profile-text-bold" id="count_follower">&nbsp;{{count_follower}}</span><span class="profile-text">&nbsp;フォロワー</span>
         </div>
       </div>
       <div class="row">
@@ -216,6 +216,39 @@
             var img = document.getElementById('like_after {{diary.id}}')
             img.setAttribute('src', "{% static 'assets/img/heart_before.png' %}");
             img.setAttribute('id', "like_before {{diary.id}}");
+          }
+        }).catch(error => {
+          console.log(error);
+        });
+      });
+
+      document.getElementById('follow_button').addEventListener('click', e => {
+        const to_follow_id = document.getElementById("follow_button").value
+        const url = "{% url 'travelog_app:follow_user' 0 %}".replace('0', to_follow_id);
+        e.preventDefault();
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+            'X-CSRFToken': '{{ csrf_token }}',
+          },
+        }).then(response => {
+          return response.json();
+        }).then(response => {
+          if (response.message == 'Success') {
+            var btn = document.getElementById('follow_button')
+            btn.style.backgroundColor = 'white'
+            btn.style.color = 'rgb(33 37 41)'
+            btn.style.border = 'solid 2px rgb(207 207 207)'
+            btn.textContent = 'フォロー中'
+          } else if (response.message == 'Already following') {
+            var btn = document.getElementById('follow_button')
+            btn.style.backgroundColor = 'rgb(33 37 41)'
+            btn.style.color = 'white'
+            btn.style.border = 'none'
+            btn.textContent = 'フォローする'
+          }else{
+            ;
           }
         }).catch(error => {
           console.log(error);

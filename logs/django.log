@@ -6688,3 +6688,854 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'follow_user' with arguments '('',)' not found. 1 pattern(s) tried: ['follow_user/(?P<pk>[0-9]+)\\Z']
 2024-05-25 18:52:16,097	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:00:24,343	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:13:25,430	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 19:13:25,437	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /.env
+2024-05-25 19:13:25,524	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 19:13:25,525	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-25 19:25:05,160	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 19:25:05,160	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-25 19:25:05,215	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 19:25:05,216	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /favicon.ico
+2024-05-25 19:30:11,559	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:31:25,335	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:36:06,236	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 19:36:06,238	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /owa/auth/logon.aspx
+2024-05-25 19:36:49,642	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /profile/follow_user/21
+2024-05-25 19:38:42,703	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':follow_user' from 'travelog_app:follow_user'
+2024-05-25 19:38:42,979	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:39:57,098	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'follow_user' with arguments '(' +  to_follow_id + ',)' not found. 1 pattern(s) tried: ['follow_user/(?P<pk>[0-9]+)\\Z']
+2024-05-25 19:39:57,347	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:42:19,537	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'follow_user' with arguments '(' +  to_follow_id + ',)' not found. 1 pattern(s) tried: ['follow_user/(?P<pk>[0-9]+)\\Z']
+2024-05-25 19:42:19,781	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:42:46,326	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'follow_user' with arguments '(' +  to_follow_id + ',)' not found. 1 pattern(s) tried: ['follow_user/(?P<pk>[0-9]+)\\Z']
+2024-05-25 19:42:46,573	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:43:12,946	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':follow_user' from 'travelog_app:follow_user'
+2024-05-25 19:43:13,212	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:43:43,732	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '\:follow_user' from 'travelog_app\:follow_user'
+2024-05-25 19:43:43,995	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:44:32,941	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '\'travelog_app:follow_user\'' from '\'travelog_app:follow_user\''
+2024-05-25 19:44:33,210	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 19:46:35,536	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 1372, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '\'travelog_app:follow_user\'"' from '\'travelog_app:follow_user\'"'
+2024-05-25 19:46:35,800	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 20:00:13,935	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /follow_user/21
+2024-05-25 20:00:20,056	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 20:11:01,111	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 20:11:01,118	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /.git/config
+2024-05-25 20:20:19,741	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 277: 'endblock', expected 'endif'. Did you forget to register or load this tag?
+2024-05-25 20:20:20,010	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 20:20:50,896	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 20:20:50,898	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-25 20:28:26,382	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 20:28:33,658	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /follow_user/21
+2024-05-25 20:28:59,620	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /follow_user/21
+2024-05-25 20:30:42,237	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /follow_user/21
+2024-05-25 20:31:12,984	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 20:59:08,629	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 21:09:43,077	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 22:06:28,696	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 22:06:28,705	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-25 22:22:20,016	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' - 1' from 'count_follow - 1'
+2024-05-25 22:22:20,297	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 22:40:30,691	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 699, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 761, in args_check
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: add requires 2 arguments, 1 provided
+2024-05-25 22:40:30,980	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 22:46:00,026	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py(Line:125)	Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '34.230.218.223'. You may need to add '34.230.218.223' to ALLOWED_HOSTS.
+2024-05-25 22:46:00,036	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Bad Request: /
+2024-05-25 22:46:21,226	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 699, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 761, in args_check
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: add requires 2 arguments, 1 provided
+2024-05-25 22:46:21,501	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 22:46:33,030	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /profile/21
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 699, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/template/base.py", line 761, in args_check
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: add requires 2 arguments, 1 provided
+2024-05-25 22:46:33,277	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-05-25 23:06:52,225	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
