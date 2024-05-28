@@ -7,18 +7,19 @@
 
 {% block contents %}
   <link href="{% static 'css/profile.css' %}" rel="stylesheet" />
+  <script src="{% static 'script/profile.js' %}"></script>
   <div class="profile-wrapper">
     <img src="{% static 'assets/img/header.jpg' %}" class="w-100" alt="...">
     <div class="container profile px-3 pb-4">
       <div class="row py-2">
         <div class="user-info d-flex flex-row">
-          <img src="{{ MEDIA_URL }}{{user.profile_img}}" class="user-img-profile px-2 rounded-circle" alt="..." />
-          <h2 class="user-name text-body py-2">{{ user.display_name }}</h2>
+          <img src="{{ MEDIA_URL }}{{others_user.profile_img}}" class="user-img-profile px-2 rounded-circle" alt="..." />
+          <h2 class="user-name text-body py-2">{{ others_user.display_name }}</h2>
         </div>
       </div>
       <div class="row">
         <p class="profile-text py-3">
-            {{user.user_bio}}
+            {{others_user.user_bio}}
         </p>
       </div>
       <div class="row">
@@ -29,11 +30,12 @@
       </div>
       <div class="row">
         <div class="col-6 px-2 pt-3">
-        <button type="button" onclick="location.href='{% url 'travelog_app:profile_edit' user.id %}'" class="btn btn-secondary px-3 py-2">プロフィールを編集</button>
+          {% if follow == 'True' %}
+            <button type="button" value="{{others_user.id}}" id="follow_button" class="btn  follow px-3 py-2">フォロー中</button>
+          {% else %}
+            <button type="button" value="{{others_user.id}}" id="follow_button" class="btn  unfollow px-3 py-2">フォローする</button>
+          {% endif %}
         </div>
-        <div class="col-6 px-2 pt-3">
-          <button type="button" onclick="location.href='{% url 'account_logout' %}'" class="btn btn-danger px-3 py-2">ログアウト</button>
-          </div>
       </div>
     </div>
   </div>
@@ -45,7 +47,7 @@
     {% for diary in diary_list %}
       <div class="user-info d-flex flex-row">
         <a href="{% url 'travelog_app:profile' diary.user_id.id %}" class="img-profile-link">
-        <img src="{{ MEDIA_URL }}{{user.profile_img}}" class="user-img p-2 rounded-circle" alt="...">
+        <img src="{{ MEDIA_URL }}{{diary.user_id.profile_img}}" class="user-img p-2 rounded-circle" alt="...">
         </a>
         <a href="{% url 'travelog_app:profile' diary.user_id.id %}">
         <h2 class="user-name text-body py-2">{{ diary.user_id.display_name}}</h2>
@@ -60,7 +62,6 @@
               <div class="carousel-item active">
                 <figure class="figure">
                 <img src='{{ MEDIA_URL }}{{diary.post_image1}}' class="d-block w-100" data-bs-interval="false" alt="...">
-                <figcaption class="figure-caption post_img p-2">ここから入りました！</figcaption>
               </figure>
               </div>
               {% endif %}
@@ -69,7 +70,6 @@
               <div class="carousel-item">
                 <figure class="figure">
                 <img src='{{ MEDIA_URL }}{{diary.post_image2}}' class="d-block w-100" data-bs-interval="false" alt="...">
-                <figcaption class="figure-caption post_img p-2">ここでお参り</figcaption>
                 </figure>
               </div>
               {% endif %}
@@ -172,12 +172,6 @@
           </button>
           </a>
         </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/bookmark_before.png' %}" alt="">
-        </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/share.png' %}" alt="">
-        </div>
       </div>
       <div class="row">
         <div class="col-2 button-item">
@@ -192,10 +186,10 @@
     </div>
     
     <script type="text/javascript">
-    
+      // いいねボタン（非同期通信）
       document.getElementById('ajax-like-for-diary {{diary.id}}').addEventListener('click', e => {
         e.preventDefault();
-        const url = "{% url "travelog_app:like_for_diary" %}";
+        const url = "{% url 'travelog_app:like_for_diary' %}";
         fetch(url, {
           method: 'POST',
           body: `diary_id={{diary.id}}`,
@@ -222,6 +216,7 @@
         });
       });
 
+      // フォローボタン（非同期通信）
       document.getElementById('follow_button').addEventListener('click', e => {
         const to_follow_id = document.getElementById("follow_button").value
         const url = "{% url 'travelog_app:follow_user' 0 %}".replace('0', to_follow_id);
@@ -260,19 +255,16 @@
     <nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
       <div class="container-fluid">
           <ul class="navbar-nav w-100 nav-justified align-items-center">
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
             </li>
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
             </li>
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
             </li>
-            <li class="nav-item w-20 text-center">
-              <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
+            <li class="nav-item w-25 text-center">
               <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
             </li>
           </ul>

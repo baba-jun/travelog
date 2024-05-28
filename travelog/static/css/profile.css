@@ -37,9 +37,20 @@
     border-radius: 8px;
     font-size: 15px;
     font-family: "Noto Sans JP", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
+}
+
+.follow{
+    color: rgb(33 37 41);
+    background-color: white;
+    font-size: 18px;
+    border: 2px solid rgb(207 207 207);
+}
+
+.unfollow{
     color: white;
-    border: none;
+    font-size: 18px;
+    background-color: rgb(33 37 41);
 }
 
 .btn-secondary{

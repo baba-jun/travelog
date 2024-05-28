@@ -8,6 +8,7 @@
     font-size: 20px;
 }
 
+
 .card-title{
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
@@ -23,11 +24,21 @@
 }
 
 .user-img{
+    width: 100%;
+    display: block;
+}
+
+.img-profile-link{
+    display: inline-block;
     max-width: 13%;
 }
 
 .user-info{
     align-items: center;
+}
+
+.user-info a{
+    text-decoration: none;
 }
 
 .button-item {

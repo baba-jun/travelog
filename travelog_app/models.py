@@ -24,7 +24,7 @@ class cities(models.Model):
         return self.city_id
     
 class areas(models.Model):
-    area_name = models.CharField(verbose_name='エリア名', null=False, blank=False, max_length=50)
+    area_name = models.CharField(verbose_name='エリア名', null=True, blank=True, max_length=50,unique=True)
     prefecture_name = models.ForeignKey(prefectures, db_column="prefecture_name",to_field='prefecture_name',verbose_name='都道府県名', on_delete=models.PROTECT)
     
     def __str__(self):
@@ -36,7 +36,7 @@ class diary(models.Model):
     comment = models.TextField(verbose_name='コメント', null=False, blank=False, max_length=200)
     country = models.CharField(verbose_name='観光地の国', null=True, blank=True,  max_length=30)
     prefectures = models.ForeignKey(prefectures, verbose_name='都道府県', blank=True, null=True, on_delete=models.PROTECT)
-    city = models.ForeignKey(cities, verbose_name='市町村区', blank=True, null=True, on_delete=models.PROTECT)
+    area = models.CharField(verbose_name='エリア', blank=True, null=True, max_length=50)
     favorites = models.PositiveIntegerField(verbose_name='favorites', null=False, blank=False, default=0)
     post_image1 = models.ImageField(verbose_name='投稿画像', blank=True, null=True)
     post_image2 = models.ImageField(verbose_name='投稿画像', blank=True, null=True)
@@ -57,3 +57,12 @@ class likes(models.Model):
 
     class Meta:
         verbose_name_plural = 'likes'
+        
+class follows(models.Model):
+    from_follow = models.ForeignKey(CustomUser, verbose_name='フォローしているユーザー', related_name='from_follow', on_delete=models.CASCADE)
+    to_follow = models.ForeignKey(CustomUser, verbose_name='フォローされているユーザー', on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateField(verbose_name='updated_at', auto_now=True)
+    
+    class Meta:
+        verbose_name_plural = 'from_follow'
