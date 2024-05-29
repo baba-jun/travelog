@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load widget_tweaks %}
 
 {% block title %}投稿画面{% endblock %}
 
@@ -23,23 +24,25 @@
 <div class="container my-div-style mt-3">
     <div class="row posttextform">
 
-            <h2>投稿検索</h2>
-
-            <h2>都道府県を選択</h2>
+            <h2>エリアから投稿検索</h2>
+            <div class="col-8 my-3">
             <form method="post" name="prefecture_form">
                 {% csrf_token %}
-                {{ prefecture_form.as_p }}
+                <label for="id_prefectures" class="form-label">都道府県を選択</label>
+                {% render_field prefecture_form.prefectures class+="form-select" %} 
             </form>
 
-            <h2>エリアを選択</h2>
             <form method="post" name="area_form">
                 {% csrf_token %}
-                {{ area_form.as_p }}
+                <label for="id_area" class="form-label">エリアを選択</label>
+                {% render_field area_form.area class+="form-select" %} 
                 <input type="hidden" name="area_name" id="area_name">
-                <button type="submit">検索</button>
+                <div class="col-12 my-3"></div>
+                <button class="btn btn-primary w-50 submit-btn py-2 my-3" type="submit">検索</button>
+                </div>
             </form>
+          </div>
     </div>
-</div>
 {% if diaries %}
 {% for diary in diaries %}
 <div class="card w-100 text-body">
@@ -173,12 +176,6 @@
               </button>
               </a>
             </div>
-            <div class="col-2 button-item">
-              <img src="{% static 'assets/img/bookmark_before.png' %}" alt="">
-            </div>
-            <div class="col-2 button-item">
-              <img src="{% static 'assets/img/share.png' %}" alt="">
-            </div>
           </div>
           <div class="row">
             <div class="col-2 button-item">
@@ -231,26 +228,22 @@
 
     <!--下部メニュー-->
 
-<nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
-    <div class="container-fluid">
-        <ul class="navbar-nav w-100 nav-justified align-items-center">
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
-          </li>
-        </ul>
-    </div>
-  </nav>
-<div>
+    <nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
+      <div class="container-fluid">
+          <ul class="navbar-nav w-100 nav-justified align-items-center">
+            <li class="nav-item w-25 text-center">
+              <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="40%"></a>
+            </li>
+            <li class="nav-item w-25 text-center">
+              <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="40%"></a>
+            </li>
+            <li class="nav-item w-25 text-center">
+              <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="60%"></a>
+            </li>
+            <li class="nav-item w-25 text-center">
+              <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="40%"></a>
+            </li>
+          </ul>
+      </div>
+    </nav>
 {% endblock %}

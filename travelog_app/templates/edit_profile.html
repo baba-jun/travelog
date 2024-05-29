@@ -7,42 +7,55 @@
 <head>
 <link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
 <script src="{% static 'script/post-form.js' %}"></script>
+<script src="{% static 'script/edit_profile.js' %}"></script>
 </head>
 
 <div class="container my-div-style mt-3">
     <div class="row posttextform">
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <table class="table">
-                {{form.as_table}}
-            </table>
+            <div class="col-8 my-3">
+              <label for="id_display_name" class="form-label">ニックネーム</label>
+                {{form.display_name}}
+            </div>
+
+            <div class="col-8 my-3">
+              <label for="id_profile_img" class="form-label">プロフィール画像</label>
+                {{form.profile_img}}
+                <div id="profileImage_croppie"></div>
+                <input type="hidden" name="profile_img_data" id="profile_img_data">
+            </div>
+
+            <div class="col-8 my-3">
+              <label for="id_user_bio" class="form-label">プロフィール</label>
+                {{form.user_bio}}
+            </div>
 
             <div class="col-12 my-3">
-                <button class="btn btn-primary w-100 submit-btn py-2 my-5" type="submit">更新する</button>
-                </div>
+              <button type="submit" class="btn btn-primary w-100 submit-btn py-2 my-5">更新する</button>                </div>
           </form>
     </div>
 <div>
 
-<nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
-    <div class="container-fluid">
-        <ul class="navbar-nav w-100 nav-justified align-items-center">
-            <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="#"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
-            </li>
-            <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
-            </li>
-        </ul>
-    </div>
-    </nav>
+    <!--下部メニュー-->
+
+    <nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
+        <div class="container-fluid">
+            <ul class="navbar-nav w-100 nav-justified align-items-center">
+              <li class="nav-item w-25 text-center">
+                <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="40%"></a>
+              </li>
+              <li class="nav-item w-25 text-center">
+                <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="40%"></a>
+              </li>
+              <li class="nav-item w-25 text-center">
+                <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="60%"></a>
+              </li>
+              <li class="nav-item w-25 text-center">
+                <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="40%"></a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+
 {% endblock %}

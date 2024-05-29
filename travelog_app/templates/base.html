@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load widget_tweaks %}
 <html lang="ja">
 <head>
     <meta charset="utf-8">
@@ -20,13 +20,18 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static 'css/one-page-wonder.css' %}" rel="stylesheet"/>
     <link href="{% static 'css/home.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/croppie.css' %}" rel="stylesheet" />
 
     <!-- My style -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
     {% block head %}{% endblock %}
 
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- javascript -->
+    <script src="{% static 'script/croppie.js' %}"></script>
 
     <!-- Web Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,6 +75,8 @@
 
 
     {% block contents%}{% endblock %}
+
+
 
 
     <!-- Bootstrap core JS-->

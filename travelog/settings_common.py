@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'django_ses',
+    "widget_tweaks",
 ]
 
 MIDDLEWARE = [

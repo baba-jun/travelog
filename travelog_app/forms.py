@@ -4,13 +4,12 @@ from .models import CustomUser, diary, prefectures, areas
 class CustomUserEditForm(forms.ModelForm):
     class Meta:
         model  = CustomUser
-        fields = ['display_name','profile_img', 'user_bio']
+        fields = ('display_name','profile_img', 'user_bio')
         
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, **kwargs)
-            for field in self.fields.values():
-                field.widget.attrs['class'] = 'form-control'
-    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            field.widget.attrs['class'] = 'form-control'
 
 class CustomPrefecturesModelChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
