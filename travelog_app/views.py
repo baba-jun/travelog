@@ -7,6 +7,7 @@ from .forms import CustomUserEditForm, DiaryCreateForm, PrefectureForm, AreaForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CustomUser, diary, prefectures, cities, areas, follows,likes
 from django.core.exceptions import ObjectDoesNotExist
+from django.core.files.base import ContentFile
 from django.db import IntegrityError
 from django.urls import reverse_lazy
 from django.contrib import messages
@@ -16,9 +17,11 @@ from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 import os
 import PIL.Image
+import base64
 import io
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.http import HttpResponse
+from django.db.models import Q
 
 
 
@@ -45,6 +48,16 @@ class HomeView(generic.ListView):
         context.update(liked_diaries_ids)
 
         return context
+    
+    def get_queryset(self, **kwargs):
+        user = self.request.user
+        to_follow_users = follows.objects.filter(from_follow=user).values_list('to_follow', flat=True)
+        
+        queryset = super().get_queryset(**kwargs)
+        queryset = queryset.filter(Q(user_id__in = to_follow_users) | Q(user_id = user)).order_by('created_at')
+        queryset = queryset.filter()
+        
+        return queryset
     
 
 def diary_search_view(request):
@@ -74,6 +87,12 @@ class ProfileEditView(LoginRequiredMixin, UpdateView):
         return reverse_lazy('travelog_app:profile', kwargs={'pk': self.request.user.id})
     
     def form_valid(self, form):
+        profile_img_data = self.request.POST.get('profile_img_data')
+        if profile_img_data:
+            format, imgstr = profile_img_data.split(';base64,') 
+            ext = format.split('/')[-1]
+            data = ContentFile(base64.b64decode(imgstr), name='profile.' + ext)
+            form.instance.profile_img = data
         messages.success(self.request, 'プロフィール更新完了')
         return super().form_valid(form)
     
