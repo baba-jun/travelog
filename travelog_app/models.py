@@ -57,3 +57,12 @@ class likes(models.Model):
 
     class Meta:
         verbose_name_plural = 'likes'
+        
+class follows(models.Model):
+    from_follow = models.ForeignKey(CustomUser, verbose_name='フォローしているユーザー', related_name='from_follow', on_delete=models.CASCADE)
+    to_follow = models.ForeignKey(CustomUser, verbose_name='フォローされているユーザー', on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateField(verbose_name='updated_at', auto_now=True)
+    
+    class Meta:
+        verbose_name_plural = 'from_follow'

@@ -10,7 +10,6 @@
 {% block contents %}
 
 
-{% if user.is_authenticated %}
 <script src="{% static 'script/post-form.js' %}"></script>
 
 
@@ -27,8 +26,12 @@
 <!--ここから投稿コンテンツ-->
 {% for diary in diary_list %}
   <div class="user-info d-flex flex-row">
+    <a href="{% url 'travelog_app:profile' diary.user_id.id %}" class="img-profile-link">
     <img src="{{ MEDIA_URL }}{{diary.user_id.profile_img}}" class="user-img p-2 rounded-circle" alt="...">
+    </a>
+    <a href="{% url 'travelog_app:profile' diary.user_id.id %}">
     <h2 class="user-name text-body py-2">{{ diary.user_id.display_name}}</h2>
+    </a>
   </div>
 
 
@@ -39,7 +42,6 @@
           <div class="carousel-item active">
             <figure class="figure">
             <img src='{{ MEDIA_URL }}{{diary.post_image1}}' class="d-block w-100" data-bs-interval="false" alt="...">
-            <figcaption class="figure-caption post_img p-2">ここから入りました！</figcaption>
           </figure>
           </div>
           {% endif %}
@@ -48,14 +50,13 @@
           <div class="carousel-item">
             <figure class="figure">
             <img src='{{ MEDIA_URL }}{{diary.post_image2}}' class="d-block w-100" data-bs-interval="false" alt="...">
-            <figcaption class="figure-caption post_img p-2">ここでお参り</figcaption>
             </figure>
           </div>
           {% endif %}
 
           {% if diary.post_image3 %}
           <div class="carousel-item">
-            <img src='{{ MEDIA_URL }}{{diary.post_image3}}' class="d-block w-100" data-bs-interval="false" alt="...">
+              <img src='{{ MEDIA_URL }}{{diary.post_image3}}' class="d-block w-100" data-bs-interval="false" alt="...">
             <figcaption class="figure-caption post_img p-2">　</figcaption>
           </div>
           {% endif %}
@@ -125,9 +126,9 @@
             <div class="accordion-body">
 
               <ul class="list-group mb-4">
-                <li class="list-group-item"> <span class="fw-bold">国</span>：<a class="link-opacity-100" href="#">{{ diary.country}}</a></li>
-                <li class="list-group-item"><span class="fw-bold">都道府県</span>：<a class="link-opacity-100" href="#">{{ diary.prefectures.prefecture_name}}</a></li>
-                <li class="list-group-item"><span class="fw-bold">エリア</span>：<a class="link-opacity-100" href="#">{{ diary.area}}</a></li>
+                <li class="list-group-item"> <span class="fw-bold">国</span>：<a class="link-opacity-100">{{ diary.country}}</a></li>
+                <li class="list-group-item"><span class="fw-bold">都道府県</span>：<a class="link-opacity-100">{{ diary.prefectures.prefecture_name}}</a></li>
+                <li class="list-group-item"><span class="fw-bold">エリア</span>：<a class="link-opacity-100">{{ diary.area}}</a></li>
               </ul>
 
               <a class="link-opacity-100" href="#">この観光地の位置</a>
@@ -150,12 +151,6 @@
           {% endif %}
           </button>
           </a>
-        </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/bookmark_before.png' %}" alt="">
-        </div>
-        <div class="col-2 button-item">
-          <img src="{% static 'assets/img/share.png' %}" alt="">
         </div>
       </div>
       <div class="row">
@@ -201,55 +196,28 @@
   });
 </script>
 
+
 {% endfor %}
 
 <!--下部メニュー-->
 
 <nav class="navbar navbar-expand navbar-light bg-light flex-row  border-top py-1 fixed-bottom">
-    <div class="container-fluid">
-        <ul class="navbar-nav w-100 nav-justified align-items-center">
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="50%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="50%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="80%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="#"><img src="{% static 'assets/img/notification-line.png' %}" alt="" width="50%"></a>
-          </li>
-          <li class="nav-item w-20 text-center">
-            <a class="nav-link" href="{% url 'travelog_app:profile' %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="50%"></a>
-          </li>
-        </ul>
-    </div>
-  </nav>
-
-
-{% else %}
-
-<div class="container-fluid py-5 w-75">
-    <div class="row">
-        <div class="col-12 p-3">
-            <img class="img-fluid" src={% static 'assets/img/top.png' %} alt="...">
-        </div>
-    </div>
-    <div class="container-fluid py-5 w-75">
-        <div class="row">
-            <button type="button" class="btn btn-block btn-primary btn-lg my-4" onclick="location.href='accounts/signup/'">サインアップ</button>
-            <button type="button" class="btn btn-block btn-primary btn-lg my-4" onclick="location.href='accounts/login/'">ログイン</button>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="py-5 bg-black">
-    <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Travelog 2024</p>
-    </div>
-</footer>
-{% endif %}
-
+  <div class="container-fluid">
+      <ul class="navbar-nav w-100 nav-justified align-items-center">
+        <li class="nav-item w-25 text-center">
+          <a class="nav-link" href="{% url 'travelog_app:Home' %}"><img src="{% static 'assets/img/home-line.png' %}" alt="" width="40%"></a>
+        </li>
+        <li class="nav-item w-25 text-center">
+          <a class="nav-link" href="{% url 'travelog_app:search' %}"><img src="{% static 'assets/img/search-line.png' %}" alt="" width="40%"></a>
+        </li>
+        <li class="nav-item w-25 text-center">
+          <a class="nav-link" href="{% url 'travelog_app:create_post' %}"><img src="{% static 'assets/img/add-box-line.png' %}" alt="" width="60%"></a>
+        </li>
+        <li class="nav-item w-25 text-center">
+          <a class="nav-link" href="{% url 'travelog_app:profile' user.id %}"><img src="{% static 'assets/img/user-line.png' %}" alt="" width="40%"></a>
+        </li>
+      </ul>
+  </div>
+</nav>
 
 {% endblock %}

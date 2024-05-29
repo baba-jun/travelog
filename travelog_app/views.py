@@ -5,7 +5,10 @@ from django.views import generic
 from django.views.generic.edit import UpdateView
 from .forms import CustomUserEditForm, DiaryCreateForm, PrefectureForm, AreaForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import CustomUser, diary, prefectures, cities, areas, likes
+from .models import CustomUser, diary, prefectures, cities, areas, follows,likes
+from django.core.exceptions import ObjectDoesNotExist
+from django.core.files.base import ContentFile
+from django.db import IntegrityError
 from django.urls import reverse_lazy
 from django.contrib import messages
 import csv
@@ -14,9 +17,12 @@ from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 import os
 import PIL.Image
+import base64
 import io
 from django.core.files.uploadedfile import InMemoryUploadedFile
+from django.http import HttpResponse
 from django.db.models import Q
+
 
 
 
@@ -43,6 +49,16 @@ class HomeView(generic.ListView):
 
         return context
     
+    def get_queryset(self, **kwargs):
+        user = self.request.user
+        to_follow_users = follows.objects.filter(from_follow=user).values_list('to_follow', flat=True)
+        
+        queryset = super().get_queryset(**kwargs)
+        queryset = queryset.filter(Q(user_id__in = to_follow_users) | Q(user_id = user)).order_by('created_at')
+        queryset = queryset.filter()
+        
+        return queryset
+    
 
 def diary_search_view(request):
     prefectures_form = PrefectureForm()
@@ -68,9 +84,15 @@ class ProfileEditView(LoginRequiredMixin, UpdateView):
     template_name = 'edit_profile.html'
 
     def get_success_url(self):
-        return reverse_lazy('travelog_app:profile')
+        return reverse_lazy('travelog_app:profile', kwargs={'pk': self.request.user.id})
     
     def form_valid(self, form):
+        profile_img_data = self.request.POST.get('profile_img_data')
+        if profile_img_data:
+            format, imgstr = profile_img_data.split(';base64,') 
+            ext = format.split('/')[-1]
+            data = ContentFile(base64.b64decode(imgstr), name='profile.' + ext)
+            form.instance.profile_img = data
         messages.success(self.request, 'プロフィール更新完了')
         return super().form_valid(form)
     
@@ -125,21 +147,36 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
         return super().form_invalid(form)
 
 class ProfileView(generic.ListView):
-    template_name = "profile.html"
     model = diary
 
-    def get_context_data(self, **kwargs,): #ユーザが既にイイねしているかどうかの判断
+    def get_template_names(self):
+        user_id = int(self.kwargs['pk'])
+        if self.request.user.id == user_id:
+            return ['profile.html']
+        else:
+            return ['others_profile.html']
+        
+    def get_queryset(self):
+        user_id = int(self.kwargs['pk'])
+        return diary.objects.filter(user_id=user_id)
+
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
         user = self.request.user
+        others_user = get_object_or_404(CustomUser, id=int(self.kwargs['pk']))
+        context['others_user'] = others_user
 
-        liked_diaries_ids = likes.objects.filter(user_id = user.id).values_list('diary_id', flat=True)
-
-        liked_diaries_ids = {
-            'liked_diaries_ids' : liked_diaries_ids,
-        }
-        context.update(liked_diaries_ids)
-        print(liked_diaries_ids)
+        liked_diaries_ids = likes.objects.filter(user_id=user.id).values_list('diary_id', flat=True)
+        context['liked_diaries_ids'] = liked_diaries_ids
+        
+        if follows.objects.filter(from_follow=user.id, to_follow=others_user.id).exists():
+            context['follow'] = 'True'
+        else:
+            context['follow'] = 'Faslse'
+            
+        context['count_follow'] = follows.objects.filter(from_follow=others_user.id).count()
+        context['count_follower'] = follows.objects.filter(to_follow=others_user.id).count()
 
         return context
 
@@ -160,9 +197,30 @@ def like_for_diary(request):
 
     context['like_for_diary_count'] = diary_ojb.likes_set.count()
 
-
     return JsonResponse(context)
 
+def AddFollow(request, pk):
+    try:
+        from_follow_id = request.user.id
+        to_follow_id = pk
+        from_follow_user = get_object_or_404(CustomUser, id=from_follow_id)
+        to_follow_user = get_object_or_404(CustomUser, id=to_follow_id)
+        
+        # フォロー関係の存在を確認し、既に存在する場合はスキップまたはエラーメッセージを返す
+        if follows.objects.filter(from_follow=from_follow_user, to_follow=to_follow_user).exists():
+            follows.objects.filter(from_follow=from_follow_user, to_follow=to_follow_user).delete()
+            return JsonResponse({"message": "Already following"})
+        
+        obj = follows(from_follow=from_follow_user, to_follow=to_follow_user)
+        obj.save()
+        return JsonResponse({"message": "Success"}, status=200)
+    except ObjectDoesNotExist:
+        return JsonResponse({"message": "User not found"}, status=404)
+    except IntegrityError:
+        return JsonResponse({"message": "Integrity error occurred"}, status=400)
+    except Exception as e:
+        # その他のエラー処理
+        return JsonResponse({"message": f"An error occurred: {str(e)}"}, status=500)
 
 
 def upload_csv_data(request):

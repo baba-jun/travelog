@@ -1,70 +1,67 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load widget_tweaks %}
 
-{% block title %}投稿画面{% endblock %}
+{% block title %}
+  プロフィール
+{% endblock %}
 
 {% block contents %}
-
-<head>
-<link rel="stylesheet" type="text/css" href="{% static 'css/post_form.css' %}">
-<script src="{% static 'script/post-form.js' %}"></script>
-</head>
-
-<script>
-  $(function() {
-    $('#id_area').on('change', function() {
-      var select = document.getElementById('id_area');
-      var selectedText = select.options[select.selectedIndex].text;
-      document.getElementById('area_name').value = selectedText;
-  });
-});
-</script>
-
-<div class="container my-div-style mt-3">
-    <div class="row posttextform">
-
-            <h2>エリアから投稿検索</h2>
-            <div class="col-8 my-3">
-            <form method="post" name="prefecture_form">
-                {% csrf_token %}
-                <label for="id_prefectures" class="form-label">都道府県を選択</label>
-                {% render_field prefecture_form.prefectures class+="form-select" %} 
-            </form>
-
-            <form method="post" name="area_form">
-                {% csrf_token %}
-                <label for="id_area" class="form-label">エリアを選択</label>
-                {% render_field area_form.area class+="form-select" %} 
-                <input type="hidden" name="area_name" id="area_name">
-                <div class="col-12 my-3"></div>
-                <button class="btn btn-primary w-50 submit-btn py-2 my-3" type="submit">検索</button>
-                </div>
-            </form>
-          </div>
+  <link href="{% static 'css/profile.css' %}" rel="stylesheet" />
+  <script src="{% static 'script/profile.js' %}"></script>
+  <div class="profile-wrapper">
+    <img src="{% static 'assets/img/header.jpg' %}" class="w-100" alt="...">
+    <div class="container profile px-3 pb-4">
+      <div class="row py-2">
+        <div class="user-info d-flex flex-row">
+          <img src="{{ MEDIA_URL }}{{others_user.profile_img}}" class="user-img-profile px-2 rounded-circle" alt="..." />
+          <h2 class="user-name text-body py-2">{{ others_user.display_name }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <p class="profile-text py-3">
+            {{others_user.user_bio}}
+        </p>
+      </div>
+      <div class="row">
+        <div class="col px-2">
+          <span class="profile-text-bold" id="count_follow">{{count_follow}}</span><span class="profile-text">&nbsp;フォロー</span>
+          <span class="profile-text-bold" id="count_follower">&nbsp;{{count_follower}}</span><span class="profile-text">&nbsp;フォロワー</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 px-2 pt-3">
+          {% if follow == 'True' %}
+            <button type="button" value="{{others_user.id}}" id="follow_button" class="btn  follow px-3 py-2">フォロー中</button>
+          {% else %}
+            <button type="button" value="{{others_user.id}}" id="follow_button" class="btn  unfollow px-3 py-2">フォローする</button>
+          {% endif %}
+        </div>
+      </div>
     </div>
-{% if diaries %}
-{% for diary in diaries %}
-<div class="card w-100 text-body">
-<!--ここから投稿表示-->
-    <div class="user-info d-flex flex-row">
-      <a href="{% url 'travelog_app:profile' diary.user_id.id %}" class="img-profile-link">
+  </div>
+
+  <div class="card w-100 text-body">
+
+
+    <!--ここから投稿コンテンツ-->
+    {% for diary in diary_list %}
+      <div class="user-info d-flex flex-row">
+        <a href="{% url 'travelog_app:profile' diary.user_id.id %}" class="img-profile-link">
         <img src="{{ MEDIA_URL }}{{diary.user_id.profile_img}}" class="user-img p-2 rounded-circle" alt="...">
-      </a>
-      <a href="{% url 'travelog_app:profile' diary.user_id.id %}">
+        </a>
+        <a href="{% url 'travelog_app:profile' diary.user_id.id %}">
         <h2 class="user-name text-body py-2">{{ diary.user_id.display_name}}</h2>
-      </a>
+        </a>
       </div>
     
     
-        <div id="carouselExample{{diary.id}}" class="carousel slide carousel slide" data-bs-touch="true" data-bs-ride="true">
+        <div id="carouselExample2" class="carousel slide carousel slide" data-bs-touch="true" data-bs-ride="true">
     
             <div class="carousel-inner">
               {% if diary.post_image1 %}
               <div class="carousel-item active">
                 <figure class="figure">
                 <img src='{{ MEDIA_URL }}{{diary.post_image1}}' class="d-block w-100" data-bs-interval="false" alt="...">
-                <figcaption class="figure-caption post_img p-2">ここから入りました！</figcaption>
               </figure>
               </div>
               {% endif %}
@@ -73,7 +70,6 @@
               <div class="carousel-item">
                 <figure class="figure">
                 <img src='{{ MEDIA_URL }}{{diary.post_image2}}' class="d-block w-100" data-bs-interval="false" alt="...">
-                <figcaption class="figure-caption post_img p-2">ここでお参り</figcaption>
                 </figure>
               </div>
               {% endif %}
@@ -93,11 +89,11 @@
               {% endif %}
             </div>
     
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -107,25 +103,25 @@
             {% if not diary.post_image1 or diary.post_image2 or diary.post_image3 %}
             <div class="carousel-indicators thumbnail_postimgs mb-1 pb-2">
               {% if diary.post_image1 %}
-              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
+              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0">
                 <img src="{{ MEDIA_URL }}{{diary.post_image1}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
     
               {% if diary.post_image2 %}
-              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="1" aria-label="Slide 1">
+              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="1" aria-label="Slide 1">
                 <img src="{{ MEDIA_URL }}{{diary.post_image2}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
     
               {% if diary.post_image3 %}
-              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="2" aria-label="Slide 2">
+              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="2" aria-label="Slide 2">
                 <img src="{{ MEDIA_URL }}{{diary.post_image3}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
     
               {% if diary.post_image4 %}
-              <button type="button" data-bs-target="#carouselExample{{diary.id}}" data-bs-slide-to="3" aria-label="Slide 2">
+              <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="3" aria-label="Slide 2">
                 <img src="{{ MEDIA_URL }}{{diary.post_image4}}" class="d-block w-100" alt="...">
               </button>
               {% endif %}
@@ -152,7 +148,7 @@
                   <ul class="list-group mb-4">
                     <li class="list-group-item"> <span class="fw-bold">国</span>：<a class="link-opacity-100" href="#">{{ diary.country}}</a></li>
                     <li class="list-group-item"><span class="fw-bold">都道府県</span>：<a class="link-opacity-100" href="#">{{ diary.prefectures.prefecture_name}}</a></li>
-                    <li class="list-group-item"><span class="fw-bold">エリア</span>：<a class="link-opacity-100" href="#">{{ diary.area}}</a></li>
+                    <li class="list-group-item"><span class="fw-bold">市町村区</span>：<a class="link-opacity-100" href="#">{{ diary.area.area_name}}</a></li>
                   </ul>
     
                   <a class="link-opacity-100" href="#">この観光地の位置</a>
@@ -162,37 +158,38 @@
             </div>
     
         <!--いいね、ブックマーク、シェアボタン-->
-    
-    
-        <div class="container button_area py-3">
-          <div class="row">
-            <div class="col-2 button-item">
-              <button type="button" class="like_button" id="ajax-like-for-diary {{diary.id}}">
-              {% if diary.id in liked_diaries_ids %}
-              <img id="like_after {{diary.id}}" src="{% static 'assets/img/heart_after.png' %}" alt="">
-              {% else %}
-              <img id="like_before {{diary.id}}" src="{% static 'assets/img/heart_before.png' %}" alt="">
-              {% endif %}
-              </button>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2 button-item">
-              <span class="like_value" id="post_value {{diary.id}}">
-              {{ diary.likes_set.all | length }}
-              </span>
-            </div>
-          </div>
+
+
+    <div class="container button_area py-3">
+      <div class="row">
+        <div class="col-2 button-item">
+          <button type="button" class="like_button" id="ajax-like-for-diary {{diary.id}}">
+          {% if diary.id in liked_diaries_ids %}
+          <img id="like_after {{diary.id}}" src="{% static 'assets/img/heart_after.png' %}" alt="">
+          {% else %}
+          <img id="like_before {{diary.id}}" src="{% static 'assets/img/heart_before.png' %}" alt="">
+          {% endif %}
+          </button>
+          </a>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-2 button-item">
+          <span class="like_value" id="post_value {{diary.id}}">
+          {{ diary.likes_set.all | length }}
+          </span>
+        </div>
+      </div>
+    </div>
+
     
     </div>
     
     <script type="text/javascript">
-    
+      // いいねボタン（非同期通信）
       document.getElementById('ajax-like-for-diary {{diary.id}}').addEventListener('click', e => {
         e.preventDefault();
-        const url = "{% url "travelog_app:like_for_diary" %}";
+        const url = "{% url 'travelog_app:like_for_diary' %}";
         fetch(url, {
           method: 'POST',
           body: `diary_id={{diary.id}}`,
@@ -218,13 +215,43 @@
           console.log(error);
         });
       });
+
+      // フォローボタン（非同期通信）
+      document.getElementById('follow_button').addEventListener('click', e => {
+        const to_follow_id = document.getElementById("follow_button").value
+        const url = "{% url 'travelog_app:follow_user' 0 %}".replace('0', to_follow_id);
+        e.preventDefault();
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+            'X-CSRFToken': '{{ csrf_token }}',
+          },
+        }).then(response => {
+          return response.json();
+        }).then(response => {
+          if (response.message == 'Success') {
+            var btn = document.getElementById('follow_button')
+            btn.style.backgroundColor = 'white'
+            btn.style.color = 'rgb(33 37 41)'
+            btn.style.border = 'solid 2px rgb(207 207 207)'
+            btn.textContent = 'フォロー中'
+          } else if (response.message == 'Already following') {
+            var btn = document.getElementById('follow_button')
+            btn.style.backgroundColor = 'rgb(33 37 41)'
+            btn.style.color = 'white'
+            btn.style.border = 'none'
+            btn.textContent = 'フォローする'
+          }else{
+            ;
+          }
+        }).catch(error => {
+          console.log(error);
+        });
+      });
     </script>
-</div>
-{% endfor %}
-{% endif %}
-
-
-
+    
+    {% endfor %}
 
     <!--下部メニュー-->
 
@@ -246,4 +273,6 @@
           </ul>
       </div>
     </nav>
+</nav>
+
 {% endblock %}
