@@ -5,7 +5,7 @@
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
@@ -35,10 +35,18 @@
 
 .user-info{
     align-items: center;
+    position: relative;
 }
 
 .user-info a{
     text-decoration: none;
+}
+
+.button-left-container{
+    position: absolute;
+    top: 0.5rem;
+    right: 5%;
+    bottom: 0;
 }
 
 .button-item {

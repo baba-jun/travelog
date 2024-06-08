@@ -25,3 +25,46 @@ footer {
 }
 
 
+.three-dot-leader {
+    cursor: pointer;
+    border: none;
+    background: none;
+    display: block;
+    /* ボタン要素のサイズ */
+    width: 40px;
+    height: 40px;
+  }
+  
+  .three-dot-leader .dot,
+  .three-dot-leader .dot::before,
+  .three-dot-leader .dot::after {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    /* ドット1つのサイズ */
+    width: 6px;
+    height: 6px;
+    /* ドットの色 */
+    background-color: #333;
+  }
+  
+  .three-dot-leader .dot {
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .three-dot-leader .dot::before, .three-dot-leader .dot::after {
+    content: '';
+  }
+  
+  .three-dot-leader .dot::before {
+    /* 上側ドットの位置 */
+    top: -12px;
+  }
+  
+  .three-dot-leader .dot::after {
+    /* 下側ドットの位置 */
+    top: 12px;
+  }
