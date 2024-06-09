@@ -74,3 +74,25 @@ Traceback (most recent call last):
   File "/home/app_admin/venv_travelog/travelog/travelog_app/decorators.py", line 12, in _wrapped_view
     raise PermissionDenied
 django.core.exceptions.PermissionDenied
+2024-06-10 02:49:35,023	[ERROR]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 156, in form_valid
+    image_file = InMemoryUploadedFile(image_io, field_name=None, name=self.generate_random_string() + ".jpg",
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/views.py", line 133, in generate_random_string
+    return ''.join(random.choice(letters) for i in range(length))
+TypeError: 'CreatePostView' object cannot be interpreted as an integer
+2024-06-10 02:49:35,263	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico

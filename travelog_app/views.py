@@ -1,30 +1,29 @@
-from django.forms import BaseModelForm
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
-from django.views import generic
-from django.views.generic.edit import UpdateView
-from .forms import CustomUserEditForm, DiaryCreateForm, PrefectureForm, AreaForm
+import base64
+import csv
+import io
+import os
+import random
+import string
+
+from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import CustomUser, diary, prefectures, cities, areas, follows,likes
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.files.base import ContentFile
-from django.db import IntegrityError
-from django.urls import reverse_lazy
-from django.contrib import messages
-from .decorators import root_user_required
-import csv
-from io import TextIOWrapper
-from django.http import JsonResponse
-from django.shortcuts import render, get_object_or_404
-import os
-import PIL.Image
-import base64
-import io
 from django.core.files.uploadedfile import InMemoryUploadedFile
-from django.http import HttpResponse
+from django.db import IntegrityError
 from django.db.models import Q
+from django.forms import BaseModelForm
+from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render, get_object_or_404
+from django.urls import reverse_lazy
+from django.views import generic
+from django.views.generic.edit import UpdateView
 
+import PIL.Image
 
+from .decorators import root_user_required
+from .forms import CustomUserEditForm, DiaryCreateForm, PrefectureForm, AreaForm
+from .models import CustomUser, diary, prefectures, cities, areas, follows, likes
 
 
 
@@ -36,7 +35,11 @@ class HomeView(LoginRequiredMixin,generic.ListView):
     template_name = "home.html"
     model = diary
 
-    def get_context_data(self, **kwargs,): #ユーザが既にイイねしているかどうかの判断
+    def get_context_data(self, **kwargs,):
+        '''
+        ユーザが既にイイねしているかどうかの判断
+        '''
+        
         context = super().get_context_data(**kwargs)
 
         user = self.request.user
@@ -61,10 +64,15 @@ class HomeView(LoginRequiredMixin,generic.ListView):
         return queryset
     
 
-def diary_search_view(request):
+def post_search_view(request): 
+    '''
+    投稿検索ページ
+    '''
+
     prefectures_form = PrefectureForm()
     area_form = AreaForm()
     diaries = None
+
     if request.method == 'POST':
         area_name = request.POST.get('area_name')
         if area_name:
@@ -80,6 +88,10 @@ def diary_search_view(request):
 
     
 class ProfileEditView(LoginRequiredMixin, UpdateView):
+    '''
+    プロフィール編集
+    '''
+    
     model = CustomUser
     form_class = CustomUserEditForm
     template_name = 'edit_profile.html'
@@ -103,10 +115,22 @@ class ProfileEditView(LoginRequiredMixin, UpdateView):
     
 
 class CreatePostView(LoginRequiredMixin, generic.CreateView):
+    '''
+    投稿作成
+    '''
+
     model = diary
     template_name = "diary_create.html"
     form_class = DiaryCreateForm
     success_url = reverse_lazy("travelog_app:Home")
+    
+    def generate_random_string(self, length=12):
+        '''
+        ランダムな文字列を返す関数
+        '''
+        
+        letters = string.ascii_letters + string.digits
+        return ''.join(random.choice(letters) for i in range(length))
 
     def form_valid(self, form: BaseModelForm) -> HttpResponse:
         image_list = ['post_image1','post_image2','post_image3','post_image4']
@@ -129,7 +153,7 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
 
                     image_io = io.BytesIO()
                     resized_image.save(image_io, format="JPEG")
-                    image_file = InMemoryUploadedFile(image_io, field_name=None, name=save_path,
+                    image_file = InMemoryUploadedFile(image_io, field_name=None, name=self.generate_random_string() + ".jpg",
                                                     content_type="image/jpeg", size=image_io.getbuffer().nbytes,
                                                     charset=None)
                     image_file_list.append(image_file)
