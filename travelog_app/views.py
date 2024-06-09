@@ -11,6 +11,7 @@ from django.core.files.base import ContentFile
 from django.db import IntegrityError
 from django.urls import reverse_lazy
 from django.contrib import messages
+from .decorators import root_user_required
 import csv
 from io import TextIOWrapper
 from django.http import JsonResponse
@@ -231,7 +232,7 @@ def AddFollow(request, pk):
         # その他のエラー処理
         return JsonResponse({"message": f"An error occurred: {str(e)}"}, status=500)
 
-
+@root_user_required
 def upload_csv_data(request):
     if 'csv_prefecture' in request.FILES:
         form_data = TextIOWrapper(request.FILES['csv_prefecture'].file, encoding='utf-8')

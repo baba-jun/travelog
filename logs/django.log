@@ -63,3 +63,14 @@ Traceback (most recent call last):
 django.urls.exceptions.NoReverseMatch: Reverse for 'delete_post' with arguments '(25,)' not found. 1 pattern(s) tried: ['delete_post\\Z']
 2024-06-09 01:08:28,079	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
 2024-06-09 02:05:09,700	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-06-10 01:49:13,319	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /home/csv_upload
+2024-06-10 01:49:13,548	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Not Found: /favicon.ico
+2024-06-10 01:49:45,373	[WARNING]	/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/utils/log.py(Line:241)	Forbidden (Permission denied): /csv_upload/
+Traceback (most recent call last):
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/app_admin/venv_travelog/lib64/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/app_admin/venv_travelog/travelog/travelog_app/decorators.py", line 12, in _wrapped_view
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied

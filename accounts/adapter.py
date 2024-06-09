@@ -1,5 +1,6 @@
 from allauth.account.adapter import DefaultAccountAdapter
 from allauth.account.utils import get_user_model
+from django.core.exceptions import PermissionDenied
 from django.forms import ValidationError
 from django.urls import reverse
 
