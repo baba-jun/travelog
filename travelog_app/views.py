@@ -86,6 +86,45 @@ def post_search_view(request):
     
     return render(request, 'search.html', context)
 
+class ProfileView(LoginRequiredMixin, generic.ListView):
+    
+    '''
+    プロフィール画面の表示
+    '''
+    
+    model = diary
+
+    def get_template_names(self):
+        user_id = int(self.kwargs['pk'])
+        if self.request.user.id == user_id:
+            return ['profile.html']
+        else:
+            return ['others_profile.html']
+        
+    def get_queryset(self):
+        user_id = int(self.kwargs['pk'])
+        return diary.objects.filter(user_id=user_id)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        user = self.request.user
+        others_user = get_object_or_404(CustomUser, id=int(self.kwargs['pk']))
+        context['others_user'] = others_user
+
+        liked_diaries_ids = likes.objects.filter(user_id=user.id).values_list('diary_id', flat=True)
+        context['liked_diaries_ids'] = liked_diaries_ids
+        
+        if follows.objects.filter(from_follow=user.id, to_follow=others_user.id).exists():
+            context['follow'] = 'True'
+        else:
+            context['follow'] = 'Faslse'
+            
+        context['count_follow'] = follows.objects.filter(from_follow=others_user.id).count()
+        context['count_follower'] = follows.objects.filter(to_follow=others_user.id).count()
+
+        return context
+
     
 class ProfileEditView(LoginRequiredMixin, UpdateView):
     '''
@@ -172,6 +211,10 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
         return super().form_invalid(form)
     
 class DeletePostView(LoginRequiredMixin, generic.DeleteView):
+    '''
+    投稿を削除
+    '''
+
     model = diary
     template_name = 'diary_delete.html'
     success_url = reverse_lazy('travelog_app:Home')
@@ -180,41 +223,12 @@ class DeletePostView(LoginRequiredMixin, generic.DeleteView):
         messages.success(self.request, "投稿を削除しました")
         return super().delete(request, *args, **kwargs)
 
-class ProfileView(LoginRequiredMixin, generic.ListView):
-    model = diary
-
-    def get_template_names(self):
-        user_id = int(self.kwargs['pk'])
-        if self.request.user.id == user_id:
-            return ['profile.html']
-        else:
-            return ['others_profile.html']
-        
-    def get_queryset(self):
-        user_id = int(self.kwargs['pk'])
-        return diary.objects.filter(user_id=user_id)
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-
-        user = self.request.user
-        others_user = get_object_or_404(CustomUser, id=int(self.kwargs['pk']))
-        context['others_user'] = others_user
-
-        liked_diaries_ids = likes.objects.filter(user_id=user.id).values_list('diary_id', flat=True)
-        context['liked_diaries_ids'] = liked_diaries_ids
-        
-        if follows.objects.filter(from_follow=user.id, to_follow=others_user.id).exists():
-            context['follow'] = 'True'
-        else:
-            context['follow'] = 'Faslse'
-            
-        context['count_follow'] = follows.objects.filter(from_follow=others_user.id).count()
-        context['count_follower'] = follows.objects.filter(to_follow=others_user.id).count()
-
-        return context
-
-def like_for_diary(request):
+def like_for_post(request):
+    
+    '''
+    いいね機能
+    '''
+    
     diary_id = request.POST.get('diary_id')
     context = {
         'user': request.user.id,
@@ -234,6 +248,11 @@ def like_for_diary(request):
     return JsonResponse(context)
 
 def AddFollow(request, pk):
+    
+    '''
+    フォロー機能
+    '''
+    
     try:
         from_follow_id = request.user.id
         to_follow_id = pk
@@ -258,6 +277,11 @@ def AddFollow(request, pk):
 
 @root_user_required
 def upload_csv_data(request):
+    
+    '''
+    都道府県・エリアデータのインポート機能
+    '''
+    
     if 'csv_prefecture' in request.FILES:
         form_data = TextIOWrapper(request.FILES['csv_prefecture'].file, encoding='utf-8')
         csv_file = csv.reader(form_data)
@@ -294,6 +318,11 @@ def upload_csv_data(request):
     return render(request, 'csv_upload.html')
 
 def get_area_dropdown(request):
+    
+    '''
+    観光地エリアのドロップダウンメニューを作成
+    '''
+    
     prefectures_dropdown_text = request.GET.get('prefectures_text')
 
     area_dropdown_choices = areas.objects.filter(prefecture_name = prefectures_dropdown_text).values("area_name","id")

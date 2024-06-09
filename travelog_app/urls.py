@@ -16,7 +16,7 @@ urlpatterns = [
     path('create_post/', views.CreatePostView.as_view(), name="create_post"),
     path('delete_post/<int:pk>', views.DeletePostView.as_view(), name='delete_post'),
     path('get_area_dropdown/', views.get_area_dropdown, name='get_area_dropdown'),
-    path('like_for_diary/', views.like_for_diary, name='like_for_diary'),
+    path('like_for_diary/', views.like_for_post, name='like_for_diary'),
     path('follow_user/<int:pk>', views.AddFollow, name='follow_user'),
 
     path('csv_upload/', views.upload_csv_data, name='csv_upload'),
