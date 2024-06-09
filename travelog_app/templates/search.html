@@ -52,7 +52,7 @@
         <img src="{{ MEDIA_URL }}{{diary.user_id.profile_img}}" class="user-img p-2 rounded-circle" alt="...">
       </a>
       <a href="{% url 'travelog_app:profile' diary.user_id.id %}">
-        <h2 class="user-name text-body py-2">{{ diary.user_id.display_name}}</h2>
+        <h2 class="user-name text-body py-2"><b>{{ diary.user_id.display_name}}</b>&nbsp;@{{ diary.user_id.username}}</h2>
       </a>
       </div>
     

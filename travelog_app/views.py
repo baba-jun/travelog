@@ -31,7 +31,7 @@ class IndexView(generic.ListView):
     template_name = "index.html"
     model = diary
 
-class HomeView(generic.ListView):
+class HomeView(LoginRequiredMixin,generic.ListView):
     template_name = "home.html"
     model = diary
 
@@ -145,8 +145,17 @@ class CreatePostView(LoginRequiredMixin, generic.CreateView):
     def form_invalid(self, form: BaseModelForm) -> HttpResponse:
         messages.success(self.request, '投稿失敗')
         return super().form_invalid(form)
+    
+class DeletePostView(LoginRequiredMixin, generic.DeleteView):
+    model = diary
+    template_name = 'diary_delete.html'
+    success_url = reverse_lazy('travelog_app:Home')
+    
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, "投稿を削除しました")
+        return super().delete(request, *args, **kwargs)
 
-class ProfileView(generic.ListView):
+class ProfileView(LoginRequiredMixin, generic.ListView):
     model = diary
 
     def get_template_names(self):
